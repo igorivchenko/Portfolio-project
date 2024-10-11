@@ -1,1 +1,240 @@
+.hero-bg-color {
+    background-image: url(../img/hero_decor_mob1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding: 96px 0 0 0;
+}
+.hero-bg-color2 {
+    background-image: url(../img/hero_decor2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+.hero-box-title {
+    display: flex;
+    margin-bottom: 40px;
+}
 
+h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+font-size: 64px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--black);
+}
+
+.hero-accent {
+    font-family: var(--second-family);
+    font-weight: 400;
+font-size: 64px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--accent-green); 
+}
+
+.hero-img {
+    display: none;
+}
+
+.hero-button {
+    position: relative;
+    max-width: 416px; 
+}
+
+.rectangle {
+    position: absolute;
+    display: inline-block;
+    border-radius: 16px;
+    top: 0;
+    right: -10px;
+width: 165px;
+height: 92px;
+background-color: var(--light-accent);
+transition-property: all;
+transition-duration: 1s;
+transition: var(--hover-green);
+}
+
+.hero-btn {
+    position: relative;
+font-family: var(--font-family); 
+font-weight: 400;
+font-size: 18px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--black);
+margin-bottom: 40px;
+padding: 32px 50px 32px 45px;
+border-radius: 16px;
+background-color: transparent;
+outline: none;
+border: none;
+z-index: 1;
+}
+
+.hero-button:hover .rectangle {
+background-color: var(--hover-green);
+}
+
+.icon-button {
+    position: absolute;
+    left: 4px;
+    top: 38px;
+    font-size: 28px;
+    fill: var(--accent-green);
+    color: var(--accent-green);
+    stroke: var(--accent-greent);
+}
+
+.hero-description {
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--black);
+padding-bottom: 56px;
+width: 320px;
+}
+
+.hero-description .accent-description {
+    color: var(--accent-green);
+}
+
+.hero-social {
+    background-color: var(--light-grey);
+    padding: 32px 0;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+.social-list-item:hover {
+    color: var(--accent-green);
+}
+
+/* TABLET 768px */
+
+@media screen and (min-width:768px) {
+    .hero-bg-color {
+        padding: 72px 0 0 0;
+        background-image: url(../img/hero_decor_tablet1.png);
+    }
+    .hero-bg-color2 {
+        background-image: url(../img/hero_decor_tablet2.png);
+    }
+    .hero-box-title {
+        margin-bottom: 60px;
+    }
+
+    h1 {
+    font-size: 124px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    }
+
+    .hero-accent {
+        font-size: 124px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+      }
+    .rectangle {
+      width: 261px;
+    height: 96px;
+        }
+    
+    .hero-btn {
+    font-size: 20px;
+        }
+    
+    .icon-button {
+        position: absolute;
+        top: 42px;
+        }
+    
+    .hero-description {
+    font-size: 20px;
+    min-width: 704px;
+    }
+           
+    .social-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .social-list-item:hover {
+        color: var(--accent-green);
+    }
+    
+}
+
+/* Desktop 1280px */
+@media screen and (min-width:1280px) {
+    
+
+    .hero-bg-color {
+        padding-top: 88px;
+        background-image: url(../img/hero_decor1.png);
+            }
+            .hero-bg-color2 {
+                padding-top: 88px;
+                background-image: url(../img/hero_decor2.png);
+                    }
+            .hero-box-title {
+                margin-bottom: 80px;
+                justify-content: space-between;
+            }
+            .hero-img {
+                border-radius: 32px;
+                width: 592px;
+                height: 444px;
+                display: block;
+                overflow: hidden;
+            }
+            h1 {
+            max-width: 552px;
+            }
+        
+            .hero-accent {
+                font-size: 124px;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+              color: var(--accent-green); 
+            }
+
+            .hero-text {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .rectangle {
+              width: 261px;
+            height: 96px;
+                }
+            
+                .hero-button {
+                width: 416px; 
+                }
+        
+                .hero-btn {
+                  margin-bottom: 0; 
+                }
+
+            .hero-description {
+            min-width: 592px;
+            padding-bottom: 80px;
+            }
+            
+             
+              
+}
