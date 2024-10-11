@@ -7,6 +7,6 @@
 
 @media (min-width: 359.99px) {
   .container {
-    padding: 0 32px;
+    padding-inline: 32px;
   }
 }
