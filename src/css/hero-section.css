@@ -6,7 +6,7 @@
     padding: 96px 0 0 0;
 }
 .hero-bg-color2 {
-    background-image: url(../img/hero_decor2.png);
+    background-image: url(../img/hero_decor_mob2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -40,66 +40,74 @@ color: var(--accent-green);
     display: none;
 }
 
-.hero-button {
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin-bottom: 72px;
+  }
+
+  .hero-button {
     position: relative;
-    max-width: 416px; 
-}
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 92px;
+  }
 
 .rectangle {
-    position: absolute;
-    display: inline-block;
+    width: 165px;
+    height: 92px;
     border-radius: 16px;
-    top: 0;
-    right: -10px;
-width: 165px;
-height: 92px;
-background-color: var(--light-accent);
-transition-property: all;
-transition-duration: 1s;
-transition: var(--hover-green);
-}
+    background-color: var(--light-accent);
+  }
+  @media (hover: hover) {
+    .hero-button:hover .rectangle {
+      background-color: var(--accent-green);
+    }
+  }
+  .hero-btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0;
+  }
+  
 
-.hero-btn {
-    position: relative;
-font-family: var(--font-family); 
-font-weight: 400;
-font-size: 18px;
-line-height: 1.6;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--black);
-margin-bottom: 40px;
-padding: 32px 50px 32px 45px;
-border-radius: 16px;
-background-color: transparent;
-outline: none;
-border: none;
-z-index: 1;
-}
-
-.hero-button:hover .rectangle {
+/* .hero-button:hover .rectangle {
 background-color: var(--hover-green);
-}
+} */
 
 .icon-button {
+    height: 24px;
+  }
+  
+  .hero-button-inner {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
     position: absolute;
-    left: 4px;
-    top: 38px;
-    font-size: 28px;
-    fill: var(--accent-green);
-    color: var(--accent-green);
-    stroke: var(--accent-greent);
-}
+    left: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
 
 .hero-description {
-    font-weight: 400;
-font-size: 18px;
-line-height: 1.6;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--black);
-padding-bottom: 56px;
-width: 320px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .hero-description .accent-description {
@@ -121,6 +129,28 @@ width: 320px;
 .social-list-item:hover {
     color: var(--accent-green);
 }
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .hero-button {
+      min-width: 270px;
+    }
+  }
+  
+  @media screen and (min-width: 360px) {
+    .hero-button {
+      width: 320px;
+      height: 96px;
+      font-size: 20px;
+    }
+  
+    .hero-button-inner {
+      font-size: 20px;
+    }
+  
+    .hero-description {
+      max-width: none;
+    }
+  }
 
 /* TABLET 768px */
 
@@ -147,6 +177,16 @@ width: 320px;
     line-height: 1.2;
     letter-spacing: 0.01em;
       }
+
+      .hero-button {
+        width: 416px;
+      }
+
+      .hero-text {
+        justify-content: space-between;
+        margin-bottom: 80px;
+      }
+
     .rectangle {
       width: 261px;
     height: 96px;
@@ -156,15 +196,11 @@ width: 320px;
     font-size: 20px;
         }
     
-    .icon-button {
-        position: absolute;
-        top: 42px;
-        }
+   
     
-    .hero-description {
-    font-size: 20px;
-    min-width: 704px;
-    }
+   .hero-description {
+    width: 100%;
+  }
            
     .social-list {
         flex-direction: row;
@@ -187,7 +223,7 @@ width: 320px;
         background-image: url(../img/hero_decor1.png);
             }
             .hero-bg-color2 {
-                padding-top: 88px;
+                /* padding-top: 88px; */
                 background-image: url(../img/hero_decor2.png);
                     }
             .hero-box-title {
@@ -212,7 +248,7 @@ width: 320px;
               color: var(--accent-green); 
             }
 
-            .hero-text {
+            /* .hero-text {
                 display: flex;
                 justify-content: space-between;
             }
@@ -224,16 +260,20 @@ width: 320px;
             
                 .hero-button {
                 width: 416px; 
-                }
+                } */
         
-                .hero-btn {
+                /* .hero-btn {
                   margin-bottom: 0; 
-                }
+                } */
 
             .hero-description {
-            min-width: 592px;
-            padding-bottom: 80px;
+            max-width: 592px;
+            
             }
+            .hero-text {
+                flex-direction: row;
+                margin-bottom: 80px;
+              }
             
              
               
