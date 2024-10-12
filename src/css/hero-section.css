@@ -1,9 +1,13 @@
+.section-padding {
+    padding-top: 112px;
+}
+
 .hero-bg-color {
     background-image: url(../img/hero_decor_mob1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
-    padding: 96px 0 0 0;
+    
 }
 .hero-bg-color2 {
     background-image: url(../img/hero_decor_mob2.png);
@@ -155,8 +159,12 @@ background-color: var(--hover-green);
 /* TABLET 768px */
 
 @media screen and (min-width:768px) {
+    .section-padding {
+        padding-top: 88px;
+    }
+
     .hero-bg-color {
-        padding: 72px 0 0 0;
+       
         background-image: url(../img/hero_decor_tablet1.png);
     }
     .hero-bg-color2 {
@@ -219,7 +227,7 @@ background-color: var(--hover-green);
     
 
     .hero-bg-color {
-        padding-top: 88px;
+     
         background-image: url(../img/hero_decor1.png);
             }
             .hero-bg-color2 {
