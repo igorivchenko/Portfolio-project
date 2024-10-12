@@ -63,6 +63,11 @@
   letter-spacing: 0.03em;
 }
 
+.button-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   width: 40px;
@@ -78,6 +83,7 @@
 .swiper-button-next:focus {
   border: 1px solid var(--black);
   background: var(--light-grey);
+  transition: 0.3s;
 }
 
 .swiper-button-disabled {
