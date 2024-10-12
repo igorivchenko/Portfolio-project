@@ -42,7 +42,7 @@ function createMarkup(data) {
 
 function notFound() {
   const notFoundMarkup = `<li class="not-found swiper-slide">
-	<h1>Not found!</h1>
+	<p class="not-found-text">Not found!</p>
 </li>`;
   swiperList.innerHTML = notFoundMarkup;
 
