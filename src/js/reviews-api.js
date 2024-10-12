@@ -6,14 +6,22 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const swiperList = document.querySelector('.swiper-wrapper');
 
+const buttonWrapper = document.querySelector('.button-wrapper');
+
 async function fetchReviews(params) {
   try {
     const { data } = await axios.get(
       'https://portfolio-js.b.goit.study/api/reviews'
     );
-    console.log(data);
+
     createMarkup(data);
-  } catch (error) {}
+  } catch (error) {
+    notFound();
+    iziToast.error({
+      position: 'topRight',
+      message: error.message,
+    });
+  }
 }
 
 function createMarkup(data) {
@@ -28,8 +36,17 @@ function createMarkup(data) {
 				</li>`;
     })
     .join('');
-  console.log(markup);
   swiperList.innerHTML = markup;
+  buttonWrapper.classList.remove('visually-hidden');
+}
+
+function notFound() {
+  const notFoundMarkup = `<li class="not-found swiper-slide">
+	<h1>Not found!</h1>
+</li>`;
+  swiperList.innerHTML = notFoundMarkup;
+
+  //   buttonWrapper.classList.remove('visually-hidden');
 }
 
 fetchReviews();

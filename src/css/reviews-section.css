@@ -10,7 +10,6 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
 
   margin-bottom: 40px;
 
@@ -21,26 +20,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 8px;
+  gap: 24px;
 }
 
 .swiper {
   width: 320px;
 }
 
-.swiper-wrapper .swiper-slide {
+.swiper-wrapper .swiper-slide,
+.not-found {
   border-radius: 16px;
   padding: 32px;
 
   background-color: var(--light-grey);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 24px;
 
   min-height: 296px;
 }
 .reviews-text {
-  margin-bottom: 24px;
+  height: 170px;
+  overflow-x: auto;
 }
 
 .card-wrapper {
@@ -68,9 +69,28 @@
   height: 40px;
   padding: 6px;
   border-radius: 8px;
+  border: 1px solid var(--light-grey);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
   border: 1px solid var(--black);
+  background: var(--light-grey);
 }
 
 .swiper-button-disabled {
   border: 1px solid var(--light-grey);
+  pointer-events: none;
+  fill: var(--light-grey);
+}
+
+.not-found h1 {
+  text-align: center;
+  margin: auto 0;
+}
+
+.visually-hidden {
+  display: none;
 }
