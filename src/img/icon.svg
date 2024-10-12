@@ -12,8 +12,8 @@
     <symbol id="icon-lets-tel-1" viewBox="0 0 32 32">
       <path fill="none" stroke="#00b068" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.454" d="M1.818 8.364c0 12.049 9.769 21.818 21.818 21.818h3.273a3.272 3.272 0 0 0 3.273-3.273v-1.996c0-.751-.511-1.405-1.239-1.587l-6.433-1.609c-.64-.16-1.312.08-1.706.607l-1.411 1.881c-.41.547-1.119.788-1.76.553a17.502 17.502 0 0 1-10.39-10.39c-.236-.641.006-1.35.553-1.76l1.881-1.411a1.634 1.634 0 0 0 .607-1.706L8.675 3.058a1.633 1.633 0 0 0-1.587-1.24H5.092a3.272 3.272 0 0 0-3.273 3.273v3.273z" style="stroke:var(--color1, #00b068)"/>
     </symbol>
-    <symbol id="iicon-lets-mob" viewBox="0 0 44 32">
-      <path fill="#F0F0F0" style="fill: var(--color1, #F0F0F0)" d="M0.668 30.052v-2.667h42.667v2.667h-42.667zM0.668 17.332v-2.667h42.667v2.667h-42.667zM0.668 4.612v-2.667h42.667v2.667h-42.667z"></path>
+    <symbol id="icon-lets-mob" viewBox="0 0 32 32">
+      <path d="M.486 26.221v-1.939h31.03v1.939H.486zm0-9.251v-1.939h31.03v1.939H.486zm0-9.251V5.78h31.03v1.939H.486z"/>
     </symbol>
     <symbol id="icon-benefits-icon-3" viewBox="0 0 32 32">
       <path fill="#bcdfd1" d="M5.333 0h21.333a5.333 5.333 0 0 1 5.333 5.333v21.333a5.333 5.333 0 0 1-5.333 5.333H5.333A5.333 5.333 0 0 1 0 26.666V5.333A5.333 5.333 0 0 1 5.333 0z" style="fill:var(--color2, #bcdfd1)"/>
@@ -48,8 +48,7 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M5.333 16h21.333M18.667 8l8 8-8 8"/>
     </symbol>
     <symbol id="icon-closing" viewBox="0 0 32 32">
-      <path fill="none" stroke="#F0F0F0" style="stroke: var(--color1, #F0F0F0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
-      <path fill="none" stroke="#F0F0F0" style="stroke: var(--color1, #F0F0F0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
+      <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
     </symbol>
   </defs>
 </svg>
