@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', function () {
-  new Accordion('.accordion-container');
+new Accordion('.accordion-container', {
+  openOnInit: [0],
 });
