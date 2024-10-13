@@ -41,6 +41,7 @@
 
   min-height: 296px;
 }
+
 .reviews-text {
   height: 170px;
   overflow-x: auto;
@@ -72,6 +73,9 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   padding: 6px;

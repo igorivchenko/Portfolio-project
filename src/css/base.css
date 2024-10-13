@@ -39,17 +39,17 @@ main {
 }
 
 .section {
-  padding-top: 164px;
+  padding-top: 80px;
 }
 
-@media (min-width: 767.99) {
+@media (min-width: 359.99px) {
   .section {
     padding-top: 124px;
   }
 }
 
-@media (min-width: 359.99) {
+@media (min-width: 767.99px) {
   .section {
-    padding-top: 80px;
+    padding-top: 164px;
   }
 }
