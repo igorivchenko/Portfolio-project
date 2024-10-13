@@ -1,20 +1,21 @@
 .section-padding {
     padding-top: 112px;
+    overflow-x:hidden;
 }
 
 .hero-bg-color {
-    background-image: url(../img/hero_decor_mob1.png);
+    background-image: url(../img/hero-mob12.png), url(../img/hero-mob-13.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top;
+    background-position: top right, right bottom;
     
 }
-.hero-bg-color2 {
-    background-image: url(../img/hero_decor_mob2.png);
+/* .hero-bg-color2 {
+    background-image: url(../img/hero-mob2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
-}
+} */
 .hero-box-title {
     display: flex;
     margin-bottom: 40px;
@@ -28,6 +29,7 @@ line-height: 1.25;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--black);
+
 }
 
 .hero-accent {
@@ -67,6 +69,7 @@ color: var(--accent-green);
     height: 92px;
     border-radius: 16px;
     background-color: var(--light-accent);
+    transition: 0.3s;
   }
   @media (hover: hover) {
     .hero-button:hover .rectangle {
@@ -128,6 +131,7 @@ background-color: var(--hover-green);
     flex-direction: column;
     gap: 24px;
     text-align: center;
+    transition: 0.3s;
 }
 
 .social-list-item:hover {
@@ -247,6 +251,7 @@ background-color: var(--hover-green);
             }
             h1 {
             max-width: 552px;
+            
             }
         
             .hero-accent {
