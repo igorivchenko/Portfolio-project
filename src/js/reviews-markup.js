@@ -30,6 +30,8 @@ export function createMarkup(data) {
 export function notFound() {
   const notFoundMarkup = `<li class="not-found swiper-slide">
 	<p class="not-found-text">Not found!</p>
+</li><li class="not-found swiper-slide">
+	<p class="not-found-text">Not found!</p>
 </li>`;
   swiperList.innerHTML = notFoundMarkup;
 }
