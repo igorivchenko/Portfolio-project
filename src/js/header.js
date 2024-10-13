@@ -5,17 +5,21 @@ let toggled = false;
 button.addEventListener('click', () => {
   toggled = !toggled;
   
-
+  const root = document.documentElement;
+  
   if (toggled) {
+    root.style.setProperty('--white', '#494949');
+    root.style.setProperty('--light-grey', '#2A2D32');
+    root.style.setProperty('--black', '#F0F0F0');
     button.classList.add('right');
-    document.body.style.backgroundColor = '#494949'; 
-    document.body.style.color = '#f0f0f0'; 
+     
   
 }else{
     button.classList.remove('right');
     
-    document.body.style.backgroundColor = '#f0f0f0'; 
-    document.body.style.color = '#292929'; 
+    root.style.setProperty('--white', '#F0F0F0');
+    root.style.setProperty('--light-grey', '#e4e5e6');
+    root.style.setProperty('--black', '#2A2D32');
    
      
   }
