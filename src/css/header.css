@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-.header-box {  
-=======
-@media (min-width: 320px){
-
-    .header-box {  
->>>>>>> bb8d783c9425f7a263bb648376af27533db5027d
+ .header-box {       
         display: flex;      
         justify-content: space-between;
         padding: 20px;
@@ -224,12 +218,4 @@ letter-spacing: 0.05em;
 
 
 }
-<<<<<<< HEAD
-=======
 
-@media screen and (min-width: 1158px){
-
-}
-
-
->>>>>>> bb8d783c9425f7a263bb648376af27533db5027d
