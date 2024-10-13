@@ -9,7 +9,6 @@
 
 #ac {
   border-bottom: 1px solid var(--light-grey);
-  max-width: 320px;
   margin: 0;
   background-color: inherit;
 }
@@ -30,7 +29,7 @@
 }
 
 .accordion-container {
-  margin-top: 40px;
+  margin: 40px auto 0;
 }
 
 #ac-trigger {
@@ -51,7 +50,7 @@
 
 #btn-text-wrap {
   display: inline-block;
-  max-width: 224px;
+  width: 85%;
 }
 
 .faq-svg {
@@ -83,7 +82,6 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black);
   padding: 0 24px 28px;
 }
 
@@ -115,6 +113,10 @@
   #btn-text-wrap {
     width: 600px;
     max-width: none;
+  }
+
+  .accordion-container {
+    max-width: 688px;
   }
 }
 
