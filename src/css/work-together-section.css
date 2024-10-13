@@ -43,13 +43,6 @@
 .black-text {
     color: #292929; 
 }
-.work-together-img {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: #cccccc;
-    background-image: url(../img/tmp.png);
-}
 .work-together-row-container {
     display: flex;
     align-items:flex-start;
@@ -105,7 +98,8 @@
     line-height: 24px;
     letter-spacing: 0.5px;
 }
-.work-together-address-link:hover {
+.work-together-address-link:hover,
+.work-together-address-link:focus {
     color: #00B068;
 }
 .work-together-address-icon {
@@ -114,7 +108,8 @@
     left: 0;
     top: 0;
 }
-.work-together-address-icon:hover {
+.work-together-address-icon:hover,
+.work-together-address-icon:focus {
     border-radius: 8px;
     background: #BCDFD1;
     display: flex;
@@ -196,9 +191,13 @@
     resize: none;
 }
 .work-together-form-input:focus,
-.work-together-form-textarea:focus {
-  border-color: #007BFF;
-  outline: none;
+.work-together-form-textarea:focus,
+.work-together-form-input:hover,
+.work-together-form-textarea:hover {
+    border-color: #007BFF;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 .work-together-submit-button {
     width: 173px;
@@ -219,7 +218,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.work-together-submit-button:hover {
+.work-together-submit-button:hover,
+.work-together-submit-button:focus {
     background: #009156;
 }
 /* ___________________________END GENERIC________________________ */
@@ -297,6 +297,7 @@
 @media (min-width: 320px) and (max-width: 359px) {
     .work-together {
         flex-direction: column; 
+        padding-top: 80px;
         padding-bottom: 80px;
     }
     .work-together-title {
@@ -339,6 +340,7 @@
 @media (min-width: 360px) and (max-width: 767px) {
     .work-together {
         flex-direction: column; 
+        padding-top: 80px;
         padding-bottom: 80px;
     }
     .work-together-title {
@@ -389,6 +391,7 @@
     }    
     .work-together {
         flex-direction: column; 
+        padding-top: 124px;
         padding-bottom: 124px;
     }
     .work-together-title {
@@ -453,6 +456,7 @@
         background-position: top;
     }    
     .work-together {
+        padding-top: 164px;
         padding-bottom: 164px;
         display: flex;
         flex-direction: column; 
