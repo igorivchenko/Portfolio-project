@@ -43,6 +43,7 @@ color: var(--accent-green);
 }
 
 .hero-img {
+    border-radius: 32px;
     display: none;
 }
 
