@@ -28,8 +28,6 @@ font-size: 64px;
 line-height: 1.25;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--black);
-
 }
 
 .hero-accent {
@@ -100,7 +98,6 @@ background-color: var(--hover-green);
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
   position: absolute;
   left: 0;
   display: flex;
@@ -115,8 +112,7 @@ background-color: var(--hover-green);
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
-}
+ }
 
 .hero-description .accent-description {
   color: var(--accent-green);
