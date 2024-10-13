@@ -56,14 +56,15 @@
 
 .faq-svg {
   position: absolute;
-  top: 28px;
-  right: 24px;
+  top: 32px;
+  right: 28px;
   display: block;
   margin: auto;
   width: 24px;
   height: 24px;
-  overflow: visible;
+  /* overflow: visible; */
   transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 #ac.is-active .faq-svg {
@@ -72,7 +73,7 @@
 
 .faq-svg use {
   x: 50%;
-  y: 75%;
+  y: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -118,6 +119,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .faq.section.container {
+    position: relative;
+  }
+
   .faq-title {
     max-width: 520px;
   }
