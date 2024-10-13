@@ -7,13 +7,8 @@
   border-radius: 16px;
 }
 
-#ac.is-active > .ac-header {
-  margin-bottom: 24px;
-}
-
 #ac {
   border-bottom: 1px solid var(--light-grey);
-  padding: 28px 24px;
   max-width: 320px;
   margin: 0;
   background-color: inherit;
@@ -46,7 +41,39 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black);
-  padding: 0;
+  padding: 28px 24px;
+  width: 100%;
+}
+
+#ac-trigger::after {
+  content: '';
+}
+
+#btn-text-wrap {
+  display: inline-block;
+  max-width: 224px;
+}
+
+.faq-svg {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  display: block;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+#ac.is-active .faq-svg {
+  transform: rotate(180deg);
+}
+
+.faq-svg use {
+  x: 50%;
+  y: 75%;
+  transform: translate(-50%, -50%);
 }
 
 #ac-text {
@@ -56,6 +83,7 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--black);
+  padding: 0 24px 28px;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,6 +110,11 @@
     font-size: 20px;
     line-height: 160%;
   }
+
+  #btn-text-wrap {
+    width: 600px;
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -99,6 +132,10 @@
 
   #ac {
     width: 592px;
+  }
+
+  #btn-text-wrap {
+    width: 488px;
   }
 
   .bgr-img {
