@@ -54,6 +54,10 @@
   transform: translateX(-2px) rotate(2deg);
 }
 
+.marquee-lower svg {
+  background-color: var(--black);
+}
+
 .marquee-line {
   display: flex;
   align-items: center;
