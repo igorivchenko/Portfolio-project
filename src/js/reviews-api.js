@@ -11,7 +11,6 @@ async function fetchReviews(params) {
     const { data } = await axios.get(
       'https://portfolio-js.b.goit.study/api/reviews'
     );
-
     createMarkup(data);
   } catch (error) {
     notFound();

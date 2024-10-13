@@ -108,3 +108,58 @@
 .visually-hidden {
   display: none;
 }
+
+/* reviews tablet 768 px */
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    max-width: 704px;
+  }
+
+  .reviews-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 60px;
+  }
+
+  .swiper {
+    width: 704px;
+  }
+
+  .reviews-text {
+    height: 110px;
+  }
+
+  .swiper-wrapper .swiper-slide,
+  .not-found {
+    gap: 0;
+    min-height: 224px;
+    justify-content: space-between;
+  }
+}
+
+/* reviews desktop 1280 px */
+
+@media screen and (min-width: 1280px) {
+  .reviews-section {
+    max-width: 1216px;
+  }
+
+  .reviews-title {
+    margin: 0 auto 80px auto;
+  }
+
+  .swiper {
+    width: 1216px;
+  }
+
+  .reviews-text {
+    height: 96px;
+  }
+
+  .button-wrapper {
+    gap: 24px;
+  }
+}
