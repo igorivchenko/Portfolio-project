@@ -98,19 +98,47 @@ letter-spacing: 1.7999999523162842px;
 .bio::after {
     content: url(../img/about_tablet_decor.png);
     position: absolute;
-    
-}
+
+    }
   
 .about-item-title {
-   
-       
         font-size: 36px;
         font-weight: 500;
         line-height: 48px;
         letter-spacing: 0.5px;
-        
-}
+        }
+
+                .education {
+                    margin-top: 60px;
+                }
+
+              .role {
+                margin-top: 60px;
+              }
 
   }
  
+@media screen and (min-width:1150px) {
+    .container {
+        width: 1150px;
+    }
 
+        .about-container {
+            column-gap: 136px;
+        }
+
+                .bio::after {
+                    content: url(../img/about_decor.png);
+                    bottom: 250;
+                    right: 32;
+                }
+
+                                .education {
+                                    margin-top: 80px;
+                                }
+                
+                                .role {
+                                    margin-top: 80px;
+                                }
+
+}
