@@ -1,5 +1,5 @@
 import './js/dark-theme';
-import './js/header';
+import './js/mobile-overlay';
 import './js/my-projects';
 import './js/FAQ-accordeon';
 import './js/reviews-api';
