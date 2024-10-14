@@ -1,7 +1,3 @@
-.faq {
-  padding-top: 80px;
-}
-
 .faq-title {
   text-transform: uppercase;
 }
@@ -65,7 +61,6 @@
   margin: auto;
   width: 24px;
   height: 24px;
-  /* overflow: visible; */
   transition: transform 0.3s ease;
   transform-origin: center;
 }
@@ -90,10 +85,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .faq {
-    padding-top: 124px;
-  }
-
   .faq-title {
     font-size: 108px;
     font-weight: 400;
@@ -129,11 +120,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .faq {
-    padding-top: 61px;
-  }
-
-  .faq.section.container {
+  section.faq.container {
     position: relative;
   }
 
