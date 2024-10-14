@@ -1,13 +1,9 @@
-.section-about {
-  margin-top: 40px;
-}
-
 .about-title {
-  font-family: Impact;
+  font-family: var(--second-family);
   font-size: 52px;
   font-weight: 400;
-  line-height: 64px;
-  letter-spacing: 1.7999999523162842px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
   text-align: left;
   margin-bottom: 40px;
   grid-area: title;
@@ -33,15 +29,26 @@
 }
 
 .about-item-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   margin-bottom: 32px;
 }
 
 .about-text {
+  letter-spacing: 0.03em;
   margin: 10px 0;
 }
 
-.about-text-point {
+.about-text-point:not(:last-child) {
+  letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+.about-text-point:last-child {
+  letter-spacing: 0.03em;
 }
 
 .about-text-point::before {
@@ -73,10 +80,10 @@
   }
 
   .about-title {
-    font-size: 108px;
     font-weight: 400;
-    line-height: 124px;
-    letter-spacing: 1.7999999523162842px;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
   }
 
   .about-container {
@@ -93,16 +100,16 @@
     margin-top: 400px;
   }
 
-  .bio::after {
-    content: url(../img/about_tablet_decor.png);
-    position: absolute;
+  .bio .about-text {
+    margin-top: 0;
   }
 
   .about-item-title {
-    font-size: 36px;
     font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0.5px;
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
   }
 
   .education {
@@ -110,7 +117,15 @@
   }
 
   .role {
+    position: relative;
     margin-top: 60px;
+  }
+
+  .role::before {
+    content: url(/img/about_tablet_decor.png);
+    position: absolute;
+    top: -49%;
+    right: -2px;
   }
 }
 
@@ -123,10 +138,19 @@
     column-gap: 136px;
   }
 
+  .about-img {
+    margin-top: 272px;
+  }
+
+  .bio {
+    margin-top: 0;
+  }
+
   .bio::after {
-    content: url(../img/about_decor.png);
-    bottom: 250;
-    right: 32;
+    content: url(/img/about_decor.png);
+    position: absolute;
+    bottom: 20%;
+    right: 6%;
   }
 
   .education {
@@ -135,5 +159,10 @@
 
   .role {
     margin-top: 80px;
+  }
+
+  .role::before {
+    content: none;
+    display: none;
   }
 }
