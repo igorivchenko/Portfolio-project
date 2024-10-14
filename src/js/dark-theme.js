@@ -8,22 +8,20 @@ button.addEventListener('click', () => {
   const root = document.documentElement;
 
   if (toggled) {
-    root.style.setProperty('--white', '#494949');
-    root.style.setProperty('--light-grey', '#2A2D32');
-    root.style.setProperty('--black', '#F0F0F0');
     button.classList.add('right');
-
-
+    root.style.setProperty('--white', '#1E2023');
+    root.style.setProperty('--black', '#F0F0F0');
+    root.style.setProperty('--accent-green', '#14C57C');
+    root.style.setProperty('--light-grey', '#2A2D32');
+    root.style.setProperty('--light-accent', '#204136');
+    root.style.setProperty('--hover-grey', '#3B3F45');
   } else {
     button.classList.remove('right');
-
     root.style.setProperty('--white', '#F0F0F0');
-    root.style.setProperty('--light-grey', '#e4e5e6');
-    root.style.setProperty('--black', '#2A2D32');
-
-
+    root.style.setProperty('--black', '#292929');
+    root.style.setProperty('--accent-green', '#00B068');
+    root.style.setProperty('--light-grey', '#E4E5E6');
+    root.style.setProperty('--light-accent', '#BCDFD1');
+    root.style.setProperty('--hover-grey', '#BBBBBB');
   }
 });
-
-
-

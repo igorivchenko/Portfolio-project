@@ -43,6 +43,7 @@
   height: 15px;
   border-radius: 50%;
   background-color: var(--accent-green);
+  transition: 0.3s ease-in-out;
 }
 
 .right .circle {
