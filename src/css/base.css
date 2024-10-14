@@ -42,13 +42,13 @@ main {
   padding-top: 80px;
 }
 
-@media (min-width: 359.99px) {
+@media (min-width: 768px) {
   .section {
     padding-top: 124px;
   }
 }
 
-@media (min-width: 767.99px) {
+@media (min-width: 1280px) {
   .section {
     padding-top: 164px;
   }

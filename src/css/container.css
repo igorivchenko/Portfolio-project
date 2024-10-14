@@ -5,7 +5,7 @@
   max-width: 1280px;
 }
 
-@media (min-width: 767.99px) {
+@media (min-width: 768px) {
   .container {
     padding-inline: 32px;
   }
