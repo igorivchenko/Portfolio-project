@@ -43,6 +43,7 @@ text-transform: uppercase;
 .hero-img {
     border-radius: 32px;
     display: none;
+    object-position: top;
 }
 
 .hero-text {
