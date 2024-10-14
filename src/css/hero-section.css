@@ -1,14 +1,13 @@
 .section-padding {
-    padding-top: 112px;
-    overflow-x:hidden;
+  padding-top: 112px;
+  overflow-x: hidden;
 }
 
 .hero-bg-color {
-    background-image: url(/img/hero-mob12.png), url(/img/hero-mob-13.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top right, right bottom;
-    
+  background-image: url(/img/hero-mob12.png), url(/img/hero-mob-13.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: top right, left bottom;
 }
 
 .hero-box-title {
@@ -17,12 +16,12 @@
 }
 
 h1 {
-    font-family: var(--second-family);
-    font-weight: 400;
-font-size: 64px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .hero-accent {
@@ -36,9 +35,9 @@ text-transform: uppercase;
 }
 
 .hero-img {
-    border-radius: 32px;
-    display: none;
-    object-position: top;
+  border-radius: 32px;
+  display: none;
+  object-position: top;
 }
 
 .hero-text {
@@ -60,24 +59,23 @@ text-transform: uppercase;
 }
 
 .rectangle {
-    width: 165px;
-    height: 92px;
-    border-radius: 16px;
-    background-color: var(--light-accent);
-    transition: 0.3s;
+  width: 165px;
+  height: 92px;
+  border-radius: 16px;
+  background-color: var(--light-accent);
+  transition: 0.3s;
+}
+@media (hover: hover) {
+  .hero-button:hover .rectangle {
+    background-color: var(--accent-green);
   }
-  @media (hover: hover) {
-    .hero-button:hover .rectangle {
-      background-color: var(--accent-green);
-    }
-  }
-  .hero-btn {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    margin-bottom: 0;
-  }
-  
+}
+.hero-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0;
+}
 
 /* .hero-button:hover .rectangle {
 background-color: var(--hover-green);
@@ -104,11 +102,11 @@ background-color: var(--hover-green);
 .hero-description {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
- }
+}
 
 .hero-description .accent-description {
   color: var(--accent-green);
@@ -120,11 +118,11 @@ background-color: var(--hover-green);
 }
 
 .social-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    text-align: center;
-    transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .social-list-item:hover {
@@ -162,7 +160,7 @@ background-color: var(--hover-green);
 
   .hero-bg-color {
     background-image: url(/img/hero_decor_tablet1.png),
-     url(/img/hero_decor_tablet2.png);
+      url(/img/hero_decor_tablet2.png);
   }
 
   .hero-box-title {
@@ -215,36 +213,31 @@ background-color: var(--hover-green);
 }
 
 /* Desktop 1280px */
-@media screen and (min-width:1280px) {
-    
+@media screen and (min-width: 1280px) {
+  .hero-bg-color {
+    background-image: url(/img/hero_decor1.png), url(/img/hero_decor2.png);
+  }
+  .hero-box-title {
+    margin-bottom: 80px;
+    justify-content: space-between;
+  }
+  .hero-img {
+    border-radius: 32px;
+    width: 592px;
+    height: 444px;
+    display: block;
+    overflow: hidden;
+  }
+  h1 {
+    max-width: 552px;
+  }
 
-    .hero-bg-color {
-     
-        background-image: url(/img/hero_decor1.png),
-         url(/img/hero_decor2.png);
-                    }
-            .hero-box-title {
-                margin-bottom: 80px;
-                justify-content: space-between;
-            }
-            .hero-img {
-                border-radius: 32px;
-                width: 592px;
-                height: 444px;
-                display: block;
-                overflow: hidden;
-            }
-            h1 {
-            max-width: 552px;
-            
-            }
-        
-            .hero-accent {
-                font-size: 124px;
-            line-height: 1.2;
-            letter-spacing: 0.01em;
-              color: var(--accent-green); 
-            }
+  .hero-accent {
+    font-size: 124px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--accent-green);
+  }
 
   .hero-description {
     max-width: 592px;
