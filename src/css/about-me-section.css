@@ -1,1 +1,139 @@
+.section-about {
+  margin-top: 40px;
+}
 
+.about-title {
+  font-family: Impact;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 1.7999999523162842px;
+  text-align: left;
+  margin-bottom: 40px;
+  grid-area: title;
+}
+
+.about-span {
+  color: #00b068;
+}
+
+.bio {
+  margin-top: 40px;
+  grid-area: bio;
+}
+
+.education {
+  margin-top: 40px;
+  grid-area: education;
+}
+
+.role {
+  margin-top: 40px;
+  grid-area: role;
+}
+
+.about-item-title {
+  margin-bottom: 32px;
+}
+
+.about-text {
+  margin: 10px 0;
+}
+
+.about-text-point {
+  margin-bottom: 12px;
+}
+
+.about-text-point::before {
+  content: '•';
+  color: #00b068;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.about-img {
+  border-radius: 4%;
+  grid-area: image;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'title'
+    'image'
+    'bio'
+    'education'
+    'role';
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .about-title {
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: 1.7999999523162842px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'title title'
+      'image bio'
+      'education role';
+    column-gap: 32px;
+    position: relative;
+  }
+
+  .about-img {
+    margin-top: 400px;
+  }
+
+  .bio::after {
+    content: url(../img/about_tablet_decor.png);
+    position: absolute;
+  }
+
+  .about-item-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+  }
+
+  .education {
+    margin-top: 60px;
+  }
+
+  .role {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+
+  .about-container {
+    column-gap: 136px;
+  }
+
+  .bio::after {
+    content: url(../img/about_decor.png);
+    bottom: 250;
+    right: 32;
+  }
+
+  .education {
+    margin-top: 80px;
+  }
+
+  .role {
+    margin-top: 80px;
+  }
+}
