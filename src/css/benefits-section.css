@@ -1,1 +1,132 @@
+.benefits-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.color-accent {
+  color: var(--accent-green);
+}
+
+.benefits-list {
+  display: grid;
+  row-gap: 32px;
+}
+
+.benefits-item {
+  width: 100%;
+  height: auto;
+}
+
+.benefits-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.benefits-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #bcdfd1;
+}
+
+.benefits-card-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.benefits-card-description {
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+@media (min-width: 768px) {
+  .benefits-title {
+    width: 100%;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .benefits-item:nth-child(1) {
+    grid-column: 2;
+  }
+
+  .benefits-item:nth-child(2) {
+    grid-column: 1;
+  }
+
+  .benefits-item:nth-child(3) {
+    grid-column: 2;
+  }
+
+  .benefits-item:nth-child(4) {
+    grid-column: 1;
+  }
+
+  .benefits-card-title {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 1280px) {
+  .benefits-title {
+    max-width: 681px;
+  }
+
+  .benefits-section {
+    height: 836px;
+    background-image: url('../img/benefits_decor.png');
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: top 9% right 15%;
+  }
+
+  .benefits-list {
+    position: relative;
+    bottom: 103px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .benefits-item:nth-child(1) {
+    grid-column: 3;
+  }
+
+  .benefits-item:nth-child(2) {
+    grid-column: 1;
+  }
+
+  .benefits-item:nth-child(3) {
+    grid-column: 2;
+  }
+
+  .benefits-item:nth-child(4) {
+    grid-column: 3;
+  }
+}
+
 
