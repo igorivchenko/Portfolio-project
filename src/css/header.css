@@ -1,0 +1,142 @@
+ .header-box {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     flex-direction: row;
+
+ }
+
+
+ .logo {
+     font-family: var(--second-family);
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 100%;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+
+
+ }
+
+ .accent {
+     font-family: var(--second-family);
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 100%;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--accent-green);
+
+ }
+
+ .btn-header {
+     position: relative;
+     width: 30px;
+     height: 18px;
+     border-radius: 16px;
+     background-color: var(--light-grey);
+     border: none;
+     cursor: pointer;
+ 
+ }
+
+ .circle {
+     position: absolute;
+     top: 1.5px;
+     left: 1.5px;
+     display: block;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     background-color: var(--accent-green);
+
+ }
+
+
+ .right .circle {
+     left: calc(100% /2);
+
+ }
+
+
+ .nav-link {
+     display: none;
+ }
+
+ .mob-menu-btn {
+     padding: 0;
+     line-height: 0;
+     background-color: transparent;
+     cursor: pointer;
+     border: none;
+ }
+
+ .mob-svg {
+     fill: black;
+ }
+
+
+
+ @media screen and (min-width: 768px) {
+     .header-box {
+         display: block;
+     }
+
+     .nav {
+         display: flex;
+         justify-content: space-between;
+
+     }
+
+     .logo {
+         font-size: 32px;
+         line-height: 100%;
+         letter-spacing: 0.05em;
+         margin-right: 24px;
+     }
+
+     .accent {
+         font-size: 32px;
+         line-height: 100%;
+         letter-spacing: 0.05em;
+     }
+
+     .btn-header {
+         width: 48px;
+         height: 24px;
+
+     }
+
+     .circle {
+         width: 20px;
+         height: 20px;
+     }
+
+     .nav-link {
+         display: flex;
+         align-items: center;
+         gap: 40px;
+
+     }
+
+     .nav-link-tag {
+         font-weight: 300;
+         font-size: 16px;
+         line-height: 150%;
+         letter-spacing: 0.03em;
+         transition: cubic-bezier(0.03em);
+
+     }
+
+     .nav-link-tag .nav-tag:hover {
+         color: var(--accent-green);
+
+     }
+
+     .mob-menu-btn {
+         display: none;
+     }
+
+
+
+ }
