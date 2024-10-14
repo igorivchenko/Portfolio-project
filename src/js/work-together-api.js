@@ -1,7 +1,8 @@
-//version 1.0
+//version 1.1
 
-// This code catch the operation to send an API (post) request to the server, with Email and Message
-// Here is done all the checks about the Email and Message fields
+// Цей код перехоплює операцію для відправки API (POST) запиту на сервер з електронною поштою та повідомленням
+// Тут виконуються всі перевірки щодо полів електронної пошти та повідомлення
+
 document.addEventListener("DOMContentLoaded", function () {
     // Отримуємо елементи DOM
     const form = document.getElementById("work-together-form");

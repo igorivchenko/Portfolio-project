@@ -1,18 +1,6 @@
-/* version 1 */
+/* version 1.1 */
 /* ________________________SECTION WORK-TOGETHER_______________________ */
 /* _____________________________GENERIC___________________________ */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 ::placeholder {
     color:  #292929;
     font-family: Poppins;
@@ -21,16 +9,6 @@
     font-weight: 300;
     line-height: 24px; 
     letter-spacing: 0.5px;
-}
-.work-together {
-    display: flex;  
-    align-items: center; 
-    justify-content: center; 
-    background-image: url('../images/background.png'); 
-    background-size: cover;
-    background-position: center;
-    text-align: center; 
-    width: 100%;
 }
 .work-together-title {
     color: #00B068;
@@ -160,19 +138,14 @@
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
-    /* color: #00B068; */
-    border-color: #00B068;
     display: none;
 }
-.work-together-form-input.valid + .work-together-form-input-valid {
+.work-together-form-input.valid + .work-together-form-textarea-valid {
     display: inline;
 }
-.work-together-form-input.valid,
-.work-together-form-textarea.valid {
-    background-color: #E0F7FA;
-}
-.work-together-form-input.error {
-    border-color: #E74A3B;
+.work-together-form-input.error,
+.work-together-form-textarea.error {
+    border-color: #E74A3B !important;
     color: #E74A3B !important;
 }
 .error-message {
@@ -180,6 +153,7 @@
     bottom: -18px;
     left: 0;
     color: #E74A3B;
+    border-color: #E74A3B !important;
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
@@ -312,6 +286,7 @@
         flex-direction: column; 
         padding-top: 80px;
         padding-bottom: 80px;
+        margin: auto;
     }
     .work-together-title {
         width: 100%;
@@ -355,6 +330,7 @@
         flex-direction: column; 
         padding-top: 80px;
         padding-bottom: 80px;
+        margin: auto;
     }
     .work-together-title {
         width: 100%;
@@ -399,13 +375,14 @@
     .work-together-background-image {
         background-image: url(..//img/lets_tablet_decor.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top;
+        background-size: 55%;
+        background-position: calc(100% - 0px) calc(0% - 80px);
     }    
     .work-together {
         flex-direction: column; 
         padding-top: 124px;
         padding-bottom: 124px;
+        margin: auto;
     }
     .work-together-title {
         width: 100%;
@@ -465,8 +442,8 @@
     .work-together-background-image {
         background-image: url(..//img/lets_decor.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top;
+        background-size: 45%;
+        background-position: calc(100% - 30px) calc(0% - 110px);
     }    
     .work-together {
         padding-top: 164px;
@@ -476,6 +453,7 @@
         align-items: center; 
         justify-content: center; 
         width: 100%; 
+        margin: auto;
     }
     .work-together-row-div {
         display: inline-flex;
