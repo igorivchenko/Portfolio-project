@@ -1,142 +1,147 @@
- .header-box {
-     display: flex;
-     justify-content: space-between;
-     padding: 20px;
-     flex-direction: row;
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: row;
+}
 
- }
+.logo {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 
+.accent {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+}
 
- .logo {
-     font-family: var(--second-family);
-     font-weight: 400;
-     font-size: 24px;
-     line-height: 100%;
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
+.btn-header {
+  position: relative;
+  width: 38px;
+  height: 22px;
+  border-radius: 16px;
+  background-color: var(--light-grey);
+  border: none;
+  cursor: pointer;
+}
 
+.circle {
+  position: absolute;
+  top: 15%;
+  left: 11%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--accent-green);
+}
 
- }
+.right .circle {
+  left: 49%;
+  top: 2px;
+}
 
- .accent {
-     font-family: var(--second-family);
-     font-weight: 400;
-     font-size: 24px;
-     line-height: 100%;
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
-     color: var(--accent-green);
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
 
- }
+.nav-list {
+  display: none;
+}
 
- .btn-header {
-     position: relative;
-     width: 30px;
-     height: 18px;
-     border-radius: 16px;
-     background-color: var(--light-grey);
-     border: none;
-     cursor: pointer;
- 
- }
+.nav-link-tag:active {
+  color: var(--accent-green);
+}
 
- .circle {
-     position: absolute;
-     top: 1.5px;
-     left: 1.5px;
-     display: block;
-     width: 15px;
-     height: 15px;
-     border-radius: 50%;
-     background-color: var(--accent-green);
+.mob-menu-btn {
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
 
- }
+.mob-svg {
+  fill: var(--black);
+}
 
+@media screen and (min-width: 768px) {
+  .header-box {
+    display: block;
+  }
 
- .right .circle {
-     left: calc(100% /2);
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
- }
+  .logo {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    margin-right: 24px;
+  }
 
+  .accent {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+  }
 
- .nav-link {
-     display: none;
- }
+  .btn-header {
+    width: 48px;
+    height: 25px;
+  }
 
- .mob-menu-btn {
-     padding: 0;
-     line-height: 0;
-     background-color: transparent;
-     cursor: pointer;
-     border: none;
- }
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
 
- .mob-svg {
-     fill: black;
- }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
+  .nav-link-tag {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+  }
 
+  .mob-menu-btn {
+    display: none;
+  }
 
- @media screen and (min-width: 768px) {
-     .header-box {
-         display: block;
-     }
+  .button-theme-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+}
 
-     .nav {
-         display: flex;
-         justify-content: space-between;
+@media (min-width: 1280px) {
+  .nav-link-tag {
+    transition: 0.3s ease-in-out;
+  }
 
-     }
-
-     .logo {
-         font-size: 32px;
-         line-height: 100%;
-         letter-spacing: 0.05em;
-         margin-right: 24px;
-     }
-
-     .accent {
-         font-size: 32px;
-         line-height: 100%;
-         letter-spacing: 0.05em;
-     }
-
-     .btn-header {
-         width: 48px;
-         height: 24px;
-
-     }
-
-     .circle {
-         width: 20px;
-         height: 20px;
-     }
-
-     .nav-link {
-         display: flex;
-         align-items: center;
-         gap: 40px;
-
-     }
-
-     .nav-link-tag {
-         font-weight: 300;
-         font-size: 16px;
-         line-height: 150%;
-         letter-spacing: 0.03em;
-         transition: cubic-bezier(0.03em);
-
-     }
-
-     .nav-link-tag .nav-tag:hover {
-         color: var(--accent-green);
-
-     }
-
-     .mob-menu-btn {
-         display: none;
-     }
-
-
-
- }
+  @media (hover: hover) {
+    .nav-link-tag:hover {
+      color: var(--accent-green);
+    }
+  }
+}
