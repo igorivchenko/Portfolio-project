@@ -1,13 +1,18 @@
 .section-padding {
   padding-top: 112px;
-  overflow-x: hidden;
 }
 
 .hero-bg-color {
-  background-image: url(/img/hero-mob12.png), url(/img/hero-mob-13.png);
+  background-image: url(/img/hero-mob12.png);
   background-repeat: no-repeat;
-  /* background-size: contain; */
-  background-position: top right, left bottom;
+  background-size: 350px 264px;
+  background-position: top 3% center;
+}
+
+.hero-bg-color2 {
+  background-image: url(/img/hero-mob-13.png);
+  background-repeat: no-repeat;
+  background-position: top 60% right 13%;
 }
 
 .hero-box-title {
@@ -65,21 +70,23 @@ h1 {
   background-color: var(--light-accent);
   transition: 0.3s;
 }
+
 @media (hover: hover) {
   .hero-button:hover .rectangle {
     background-color: var(--accent-green);
   }
 }
+
+.hero-button:active .rectangle {
+  background-color: #14c57c;
+}
+
 .hero-btn {
   padding: 0;
   background-color: transparent;
   border: none;
   margin-bottom: 0;
 }
-
-/* .hero-button:hover .rectangle {
-background-color: var(--hover-green);
-} */
 
 .icon-button {
   height: 24px;
@@ -89,6 +96,7 @@ background-color: var(--hover-green);
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
+  color: var(--black);
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -125,6 +133,10 @@ background-color: var(--hover-green);
   transition: 0.3s;
 }
 
+.social-list-item {
+  transition: 0.3s ease-in-out;
+}
+
 .social-list-item:hover {
   color: var(--accent-green);
 }
@@ -159,8 +171,14 @@ background-color: var(--hover-green);
   }
 
   .hero-bg-color {
-    background-image: url(/img/hero_decor_tablet1.png),
-      url(/img/hero_decor_tablet2.png);
+    background-image: url(/img/hero_decor_tablet1.png);
+    background-position: top 4% right 9%;
+  }
+
+  .hero-bg-color2 {
+    background-image: url(/img/hero_decor_tablet2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 18% right 25%;
   }
 
   .hero-box-title {
@@ -203,6 +221,7 @@ background-color: var(--hover-green);
 
   .hero-description {
     width: 100%;
+    font-size: 20px;
   }
 
   .social-list {
@@ -219,12 +238,21 @@ background-color: var(--hover-green);
 /* Desktop 1280px */
 @media screen and (min-width: 1280px) {
   .hero-bg-color {
-    background-image: url(/img/hero_decor1.png), url(/img/hero_decor2.png);
+    background-image: url(/img/hero_decor2.png);
+    background-position: top 3% right 14%;
   }
+
+  .hero-bg-color2 {
+    background-image: url(/img/hero_decor1.png);
+    background-repeat: no-repeat;
+    background-position: bottom -14% left 17%;
+  }
+
   .hero-box-title {
     margin-bottom: 80px;
     justify-content: space-between;
   }
+
   .hero-img {
     border-radius: 32px;
     width: 592px;
@@ -232,6 +260,7 @@ background-color: var(--hover-green);
     display: block;
     overflow: hidden;
   }
+
   h1 {
     max-width: 552px;
   }
