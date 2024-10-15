@@ -1,3 +1,68 @@
+import projects1 from '/img/projects1.jpg';
+import projects1_xx from '/img/projects1_xx.jpg';
+import projects2 from '/img/projects2.jpg';
+import projects2_xx from '/img/projects2_xx.jpg';
+import projects3 from '/img/projects3.jpg';
+import projects3_xx from '/img/projects3_xx.jpg';
+import projects4 from '/img/projects4.jpg';
+import projects4_xx from '/img/projects4_xx.jpg';
+import projects5 from '/img/projects5.jpg';
+import projects5_xx from '/img/projects5_xx.jpg';
+import projects6 from '/img/projects6.jpg';
+import projects6_xx from '/img/projects6_xx.jpg';
+import projects7 from '/img/projects7.jpg';
+import projects7_xx from '/img/projects7_xx.jpg';
+import projects8 from '/img/projects8.jpg';
+import projects8_xx from '/img/projects8_xx.jpg';
+import projects9 from '/img/projects9.jpg';
+import projects9_xx from '/img/projects9_xx.jpg';
+import projects10 from '/img/projects10.jpg';
+import projects10_xx from '/img/projects10_xx.jpg';
+import svg from '/img/icon.svg';
+
+const projectsImages = [
+  {
+    ordinary: projects1,
+    retina: projects1_xx,
+  },
+  {
+    ordinary: projects2,
+    retina: projects2_xx,
+  },
+  {
+    ordinary: projects3,
+    retina: projects3_xx,
+  },
+  {
+    ordinary: projects4,
+    retina: projects4_xx,
+  },
+  {
+    ordinary: projects5,
+    retina: projects5_xx,
+  },
+  {
+    ordinary: projects6,
+    retina: projects6_xx,
+  },
+  {
+    ordinary: projects7,
+    retina: projects7_xx,
+  },
+  {
+    ordinary: projects8,
+    retina: projects8_xx,
+  },
+  {
+    ordinary: projects9,
+    retina: projects9_xx,
+  },
+  {
+    ordinary: projects10,
+    retina: projects10_xx,
+  },
+];
+
 const projectsQuantity = 10;
 const projectsOnPage = 3;
 const projectsStateArr = [];
@@ -48,8 +113,10 @@ const renderProjects = arr => {
       return `
             <li>
                 <img class="project-img" 
-                    srcset="/img/projects${idx}.jpg 1x, /img/projects${idx}_xx.jpg 2x"
-                    src="/img/projects${idx}.jpg"
+                    srcset="${projectsImages[idx - 1].ordinary} 1x, ${
+        projectsImages[idx - 1].retina
+      } 2x"
+                    src="${projectsImages[idx - 1].ordinary}"
                     alt="${name}"
                     loading="lazy">
                 <span class="projects-stack">React, JavaScript, Node JS, Git</span>
@@ -59,7 +126,7 @@ const renderProjects = arr => {
                         <a class="projects-link" href="#">
                             visit
                             <svg class="projects-icon">
-                                <use href="/img/icon.svg#icon-projects-icon"></use>
+                                <use href="${svg}#icon-projects-icon"></use>
                             </svg>
                         </a>
                     </span>
