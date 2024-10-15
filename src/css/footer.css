@@ -1,8 +1,6 @@
 /*----footer----*/
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer-wrapper {
+  border-top: 1px solid var(--light-grey);
 }
 
 .footer-all {
@@ -11,7 +9,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   gap: 40px;
-  border-top: 1px solid #e4e5e6;
   padding: 40px 20px 24px 20px;
   width: 100%;
 }
@@ -41,42 +38,39 @@ footer {
 
 .footer-list {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  flex-direction: column;
   gap: 24px;
   letter-spacing: 0.03em;
 }
 
 .footer-copy {
   letter-spacing: 0.03em;
-  width: 200px;
-  height: 48px;
+  width: 197px;
   text-align: center;
 }
 
 .footer-list li {
-  transition: color 250ms;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.25s;
 }
 
 .footer-list li:focus {
-  color: #00b068;
+  color: var(--accent-green);
 }
 
 .footer-list li:hover {
-  color: #00b068;
-}
-
-@media screen and (min-width: 359.99px) {
-  .footer-all {
-    width: 320px;
-  }
+  color: var(--accent-green);
 }
 
 @media screen and (min-width: 767.99px) {
+  footer {
+    padding-top: 124px;
+  }
+
   .footer-all {
     padding: 40px 32px 24px 32px;
     width: 768px;
@@ -95,6 +89,10 @@ footer {
 }
 
 @media screen and (min-width: 1279.99px) {
+  footer {
+    padding-top: 164px;
+  }
+
   .footer-all {
     width: 1280px;
   }

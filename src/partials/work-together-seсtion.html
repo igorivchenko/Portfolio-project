@@ -2,7 +2,7 @@
 <section class="work-together container" id="contacts">
   <div class="work-together-row-div">
     <h2 class="work-together-title">
-      <span class="black-text root">Let’s</span> work together
+      <span class="black-text">Let’s</span> work together
     </h2>
   </div>
   <div class="work-together-row-container">
@@ -15,7 +15,7 @@
           <li class="work-together-address-itemlist">
             <a class="work-together-address-link" href="tel:+380904567890">
               <svg class="work-together-address-icon" width="24" height="24">
-                <use href="../img/icon.svg#icon-lets-tel-1"></use>
+                <use href="/img/icon.svg#icon-lets-tel-1"></use>
               </svg>
               +38 090 456 78 90
             </a>
@@ -26,7 +26,7 @@
               href="mailto:lloydjefferson@gmail.com"
             >
               <svg class="work-together-address-icon" width="24" height="24">
-                <use href="../img/icon.svg#icon-lets-email-2"></use>
+                <use href="/img/icon.svg#icon-lets-email-2"></use>
               </svg>
               lloydjefferson@gmail.com
             </a>
@@ -39,7 +39,7 @@
               rel="noopener noreferrer"
             >
               <svg class="work-together-address-icon" width="24" height="24">
-                <use href="../img/icon.svg#icon-lets-address-3"></use>
+                <use href="/img/icon.svg#icon-lets-address-3"></use>
               </svg>
               USA, New York
             </a>
@@ -60,6 +60,7 @@
             name="email"
             placeholder="Your email*"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="one-time-code"
             required
           />
           <svg
@@ -68,7 +69,7 @@
             height="16"
             style="display: none"
           >
-            <use href="../img/icon.svg#icon-lets-ok-4"></use>
+            <use href="/img/icon.svg#icon-lets-ok-4"></use>
           </svg>
           <span class="error-message" id="email-error"></span>
         </div>
@@ -99,15 +100,17 @@
 
 <div class="work-together-modal-backdrop" id="modal-backdrop">
   <div class="work-together-modal-window" id="modal-window">
-    <button
-      class="work-together-modal-close-btn"
-      id="modal-close-btn"
-      aria-label="Close modal"
-    >
-      <svg class="work-together-form-modal-close" width="24" height="24">
-        <use href="../img/icon.svg#icon-closing"></use>
-      </svg>
-    </button>
+    <div class="dark-theme">
+      <button
+        class="work-together-modal-close-btn"
+        id="modal-close-btn"
+        aria-label="Close modal"
+      >
+        <svg class="work-together-form-modal-close" width="24" height="24">
+          <use href="/img/icon.svg#icon-closing"></use>
+        </svg>
+      </button>
+    </div>
     <h2 class="work-together-modal-title" id="modal-title">
       Thank you for your interest in cooperation!
     </h2>
