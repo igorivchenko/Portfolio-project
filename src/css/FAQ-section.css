@@ -55,6 +55,8 @@
 
 .faq-svg {
   position: absolute;
+  top: 0;
+  left: 0;
   top: 32px;
   right: 28px;
   display: block;
@@ -69,11 +71,11 @@
   transform: rotate(180deg);
 }
 
-.faq-svg use {
+/* .faq-svg use {
   x: 50%;
   y: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 #ac-text {
   font-family: var(--font-family);
