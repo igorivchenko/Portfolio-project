@@ -1,4 +1,4 @@
-/* version 1.1 */
+/* version 1.2 */
 /* ________________________SECTION WORK-TOGETHER_______________________ */
 /* _____________________________GENERIC___________________________ */
 ::placeholder {
@@ -145,7 +145,6 @@
 }
 .work-together-form-input.error,
 .work-together-form-textarea.error {
-    border-color: #E74A3B !important;
     color: #E74A3B !important;
 }
 .error-message {
@@ -371,18 +370,16 @@
 }
 /* ____________________________END BASE-MOBILE___________________________ */
 /* ________________________________TABLET_______________________________ */
-@media (min-width: 768px) and (max-width: 1279px) {
-    .work-together-background-image {
-        background-image: url(..//img/lets_tablet_decor.png);
-        background-repeat: no-repeat;
-        background-size: 55%;
-        background-position: calc(100% - 0px) calc(0% - 80px);
-    }    
+@media (min-width: 768px) and (max-width: 1279px) {  
     .work-together {
         flex-direction: column; 
         padding-top: 124px;
         padding-bottom: 124px;
         margin: auto;
+        background-image: url(..//img/lets_tablet_decor.png);
+        background-repeat: no-repeat;
+        background-size: 336px 260px;
+        background-position: top 1% right 6%;
     }
     .work-together-title {
         width: 100%;
@@ -439,12 +436,6 @@
 /* ______________________________END TABLET____________________________ */
 /* ______________________________DESKTOP______________________________ */
 @media screen and (min-width: 1280px) {
-    .work-together-background-image {
-        background-image: url(..//img/lets_decor.png);
-        background-repeat: no-repeat;
-        background-size: 45%;
-        background-position: calc(100% - 30px) calc(0% - 110px);
-    }    
     .work-together {
         padding-top: 164px;
         padding-bottom: 164px;
@@ -454,6 +445,10 @@
         justify-content: center; 
         width: 100%; 
         margin: auto;
+        background-image: url(..//img/lets_decor.png);
+        background-repeat: no-repeat;
+        background-size: 526px 408px;
+        background-position: top 7% right 7%;
     }
     .work-together-row-div {
         display: inline-flex;
