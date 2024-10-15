@@ -12,7 +12,7 @@
     <script type="module" crossorigin src="/Portfolio-project/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio-project/assets/vendor-DR3QWmmZ.js">
     <link rel="stylesheet" crossorigin href="/Portfolio-project/assets/vendor-BY8dMw6D.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio-project/assets/index-5ILr3t8R.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio-project/assets/index-CvX0ulA6.css">
   </head>
   <body>
     <header class="page-header">
@@ -58,28 +58,26 @@
       <img
         class="hero-img"
         srcset="/Portfolio-project/assets/hero_foto-DnjWJYLB.jpg 1x, /Portfolio-project/assets/hero_foto_xx-CuaT6bya.jpg 2x"
-        src="/Portfolio-project/assets/about_foto-Dfi_9J_0.jpg"
+        src="/Portfolio-project/assets/hero_foto-DnjWJYLB.jpg"
         alt="Fullstack developer"
         loading="lazy"
-        width="592px"
-        height="444px"
+        width="592"
+        height="444"
       />
     </div>
     <div class="hero-text">
-      <a class="#contacts">
-        <button
-          type="button"
-          class="hero-btn hero-button"
-          aria-label="Order the project"
-        >
-          <span class="rectangle"> </span>
-          <div class="hero-button-inner">
-            <svg class="icon-button" width="30" height="16">
-              <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-hero-icon"></use>
-            </svg>
-            Order the project
-          </div>
-        </button>
+      <a
+        href="#contacts"
+        class="hero-btn hero-button"
+        aria-label="Order the project"
+      >
+        <span class="rectangle"> </span>
+        <div class="hero-button-inner">
+          <svg class="icon-button" width="30" height="16">
+            <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-hero-icon"></use>
+          </svg>
+          Order the project
+        </div>
       </a>
       <p class="hero-description">
         I work with people all over the world to create
@@ -597,7 +595,7 @@
   </div>
 </section>
 
-      <section class="section">
+      <section class="section" id="projects">
   <div class="container">
     <h2 class="projects-head">
       My <span class="projects-title">projects </span>
@@ -954,30 +952,31 @@
 </section>
 
       <section class="reviews-section section">
-	<h1 class="reviews-title">reviews</h1>
-	<div class="reviews-wrapper">
-		<div class="swiper">
-			<ul class="swiper-wrapper"></ul>
-		</div>
-		<div class="button-wrapper visually-hidden">
-			<button aria-label="previous review" class="swiper-button-prev">
-				<svg class="" width="20px" height="20px">
-					<use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-arrow-left2"></use>
-				</svg>
-			</button>
-			<button aria-label="next review" class="swiper-button-next">
-				<svg class="icon-svg" width="20px" height="20px">
-					<use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-arrow-right2"></use>
-				</svg>
-			</button>
-		</div>
-	</div>
+  <h1 class="reviews-title">reviews</h1>
+  <div class="reviews-wrapper">
+    <div class="swiper">
+      <ul class="swiper-wrapper"></ul>
+    </div>
+    <div class="button-wrapper visually-hidden">
+      <button aria-label="previous review" class="swiper-button-prev">
+        <svg class="" width="20px" height="20px">
+          <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-arrow-left2"></use>
+        </svg>
+      </button>
+      <button aria-label="next review" class="swiper-button-next">
+        <svg class="icon-svg" width="20px" height="20px">
+          <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-arrow-right2"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
+
       <!-- version 1.3 -->
 <section class="work-together container" id="contacts">
   <div class="work-together-row-div">
     <h2 class="work-together-title">
-      <span class="black-text root">Let’s</span> work together
+      <span class="black-text">Let’s</span> work together
     </h2>
   </div>
   <div class="work-together-row-container">
@@ -990,7 +989,7 @@
           <li class="work-together-address-itemlist">
             <a class="work-together-address-link" href="tel:+380904567890">
               <svg class="work-together-address-icon" width="24" height="24">
-                <use href="../img/icon.svg#icon-lets-tel-1"></use>
+                <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-lets-tel-1"></use>
               </svg>
               +38 090 456 78 90
             </a>
@@ -1001,7 +1000,7 @@
               href="mailto:lloydjefferson@gmail.com"
             >
               <svg class="work-together-address-icon" width="24" height="24">
-                <use href="../img/icon.svg#icon-lets-email-2"></use>
+                <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-lets-email-2"></use>
               </svg>
               lloydjefferson@gmail.com
             </a>
@@ -1014,7 +1013,7 @@
               rel="noopener noreferrer"
             >
               <svg class="work-together-address-icon" width="24" height="24">
-                <use href="../img/icon.svg#icon-lets-address-3"></use>
+                <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-lets-address-3"></use>
               </svg>
               USA, New York
             </a>
@@ -1035,6 +1034,7 @@
             name="email"
             placeholder="Your email*"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="one-time-code"
             required
           />
           <svg
@@ -1043,7 +1043,7 @@
             height="16"
             style="display: none"
           >
-            <use href="../img/icon.svg#icon-lets-ok-4"></use>
+            <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-lets-ok-4"></use>
           </svg>
           <span class="error-message" id="email-error"></span>
         </div>
@@ -1074,15 +1074,17 @@
 
 <div class="work-together-modal-backdrop" id="modal-backdrop">
   <div class="work-together-modal-window" id="modal-window">
-    <button
-      class="work-together-modal-close-btn"
-      id="modal-close-btn"
-      aria-label="Close modal"
-    >
-      <svg class="work-together-form-modal-close" width="24" height="24">
-        <use href="../img/icon.svg#icon-closing"></use>
-      </svg>
-    </button>
+    <div class="dark-theme">
+      <button
+        class="work-together-modal-close-btn"
+        id="modal-close-btn"
+        aria-label="Close modal"
+      >
+        <svg class="work-together-form-modal-close" width="24" height="24">
+          <use href="/Portfolio-project/assets/icon-CwlkgYyU.svg#icon-closing"></use>
+        </svg>
+      </button>
+    </div>
     <h2 class="work-together-modal-title" id="modal-title">
       Thank you for your interest in cooperation!
     </h2>
@@ -1095,30 +1097,31 @@
 
     </main>
 
-    <footer class="section container">
-  <div class="footer-all">
-    <div class="footer-all-box">
-      <a href="./index.html" class="footer-logo"
-        >LLOYD<span class="footer-logo-span">JEFFERSON.</span>
-      </a>
-      <ul class="footer-list">
-        <li><a href="https://www.instagram.com/goitclub/">Instagram</a></li>
-        <li><a href="https://www.facebook.com/goITclub/">Facebook</a></li>
-        <li>
-          <a href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-            >LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://igorivchenko.github.io/Portfolio-project/"
-            >GitHub
-          </a>
-        </li>
-      </ul>
+    <footer>
+  <div class="footer-wrapper">
+    <div class="footer-all container">
+      <div class="footer-all-box">
+        <a href="./index.html" class="footer-logo"
+          >LLOYD<span class="footer-logo-span">JEFFERSON.</span>
+        </a>
+        <ul class="footer-list">
+          <li><a href="https://www.instagram.com/goitclub/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/goITclub/">Facebook</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+              >LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://igorivchenko.github.io/Portfolio-project/"
+              >GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-copy">&copy; Copyright 2024. Made by LloydJefferson</p>
     </div>
-    <p class="footer-copy">
-      &copy; Copyright 2024. Made by <strong>LloydJefferson</strong>
-    </p>
   </div>
 </footer>
 
