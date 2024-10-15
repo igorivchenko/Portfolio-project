@@ -48,8 +48,8 @@ const renderProjects = arr => {
       return `
             <li>
                 <img class="project-img" 
-                    srcset="/img/projects${idx}.jpg 1x, /img/projects${idx}_xx.jpg 2x"
-                    src="/img/projects${idx}.jpg"
+                    srcset="./img/projects${idx}.jpg 1x, ./img/projects${idx}_xx.jpg 2x"
+                    src="./img/projects${idx}.jpg"
                     alt="${name}"
                     loading="lazy">
                 <span class="projects-stack">React, JavaScript, Node JS, Git</span>
@@ -59,7 +59,7 @@ const renderProjects = arr => {
                         <a class="projects-link" href="#">
                             visit
                             <svg class="projects-icon">
-                                <use href="/img/icon.svg#icon-projects-icon"></use>
+                                <use href="./img/icon.svg#icon-projects-icon"></use>
                             </svg>
                         </a>
                     </span>
