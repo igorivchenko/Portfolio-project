@@ -35,7 +35,7 @@
   border-radius: 8px;
   width: 48px;
   height: 48px;
-  background-color: #bcdfd1;
+  background-color: var(--light-accent);
 }
 
 .benefits-card-title {
@@ -44,13 +44,10 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
 }
 
 .benefits-card-description {
-  line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
 }
 
 @media (min-width: 768px) {
@@ -92,16 +89,16 @@
 }
 
 @media (min-width: 1280px) {
-  .benefits-title {
-    max-width: 681px;
-  }
-
   .benefits-section {
     height: 836px;
     background-image: url('../img/benefits_decor.png');
     background-repeat: no-repeat;
     background-size: 526px 408px;
-    background-position: top 9% right 15%;
+    background-position: top 9% right 4%;
+  }
+
+  .benefits-title {
+    max-width: 681px;
   }
 
   .benefits-list {
@@ -128,5 +125,3 @@
     grid-column: 3;
   }
 }
-
-
