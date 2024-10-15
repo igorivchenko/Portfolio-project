@@ -6,13 +6,13 @@
 
 @media (min-width: 360px) {
   .container {
-    padding-inline: 32px;
     max-width: 360px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
+    padding-inline: 32px;
     max-width: 768px;
   }
 }

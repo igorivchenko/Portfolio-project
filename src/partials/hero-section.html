@@ -1,22 +1,24 @@
-<section class="section-padding">
-  <div class="container hero-bg-color">
+<section class="section-padding hero-bg-color">
+  <!-- <div class="hero-bg-color"> -->
+  <div class="container hero-bg-color2">
     <div class="hero-box-title">
-      <h1>Hello, I am <span class="hero-accent">Fullstack developer</span></h1>
-      <picture class="hero-img">
-        <img
-          src="/img/hero_foto.jpg"
-          alt="Fullstack developer"
-          loading="lazy"
-          width="border-radius: 32px;
-            width: 592px;
-            height: 444px;"
-        />
-      </picture>
+      <h1 class="hero-title">
+        Hello, I am <span class="hero-accent">Fullstack developer</span>
+      </h1>
+      <img
+        class="hero-img"
+        srcset="/img/hero_foto.jpg 1x, /img/hero_foto_xx.jpg 2x"
+        src="/img/hero_foto.jpg"
+        alt="Fullstack developer"
+        loading="lazy"
+        width="592"
+        height="444"
+      />
     </div>
     <div class="hero-text">
-      <button
-        type="button"
-        class="hero-btn hero-button hero-bg-color2"
+      <a
+        href="#contacts"
+        class="hero-btn hero-button"
         aria-label="Order the project"
       >
         <span class="rectangle"> </span>
@@ -26,7 +28,7 @@
           </svg>
           Order the project
         </div>
-      </button>
+      </a>
       <p class="hero-description">
         I work with people all over the world to create
         <span class="accent-description">impressive</span>
@@ -35,12 +37,14 @@
       </p>
     </div>
   </div>
+  <!-- </div> -->
   <div class="hero-social">
     <div class="container">
       <ul class="social-list">
         <li class="social-list-item">
           <a
-            href="https://www.instagram.com/"
+            class="social-list-link"
+            href="https://www.instagram.com/goitclub/"
             target="_blank"
             rel="noopener no-referrer"
             aria-label="go to Instagram"
@@ -50,7 +54,8 @@
         </li>
         <li class="social-list-item">
           <a
-            href="https://www.facebook.com/"
+            class="social-list-link"
+            href="https://www.facebook.com/goITclub/"
             target="_blank"
             rel="noopener no-referrer"
             aria-label="go to facebook"
@@ -59,7 +64,8 @@
         </li>
         <li class="social-list-item">
           <a
-            href="https://www.linkedin.com/"
+            class="social-list-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
             target="_blank"
             rel="noopener no-referrer"
             aria-label="go to linkedin"
@@ -69,6 +75,7 @@
         </li>
         <li class="social-list-item">
           <a
+            class="social-list-link"
             href="https://github.com/igorivchenko/Portfolio-project"
             target="_blank"
             rel="noopener no-referrer"

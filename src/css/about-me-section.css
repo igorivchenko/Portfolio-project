@@ -100,6 +100,10 @@
     margin-top: 400px;
   }
 
+  .bio {
+    margin-top: 0;
+  }
+
   .bio .about-text {
     margin-top: 0;
   }
@@ -121,11 +125,10 @@
     margin-top: 60px;
   }
 
-  .role::before {
-    content: url(/img/about_tablet_decor.png);
-    position: absolute;
-    top: -49%;
-    right: -2px;
+  .about-me-background-img {
+    background-image: url(/img/about_tablet_decor.png);
+    background-repeat: no-repeat;
+    background-position: bottom 13.7% right 7%;
   }
 }
 
@@ -146,13 +149,6 @@
     margin-top: 0;
   }
 
-  .bio::after {
-    content: url(/img/about_decor.png);
-    position: absolute;
-    bottom: 20%;
-    right: 6%;
-  }
-
   .education {
     margin-top: 80px;
   }
@@ -161,8 +157,10 @@
     margin-top: 80px;
   }
 
-  .role::before {
-    content: none;
-    display: none;
+  .about-me-background-img {
+    background-image: url(/img/about_tablet_decor.png);
+    background-size: 384px 288px;
+    background-repeat: no-repeat;
+    background-position: bottom 23% right 10%;
   }
 }
