@@ -82,10 +82,6 @@
   justify-content: center;
 }
 
-.mob-nav-link-tag {
-  transition: calc(0.03em);
-}
-
 .mob-nav-link-tag:not(:last-child) {
   margin-bottom: 24px;
 }
