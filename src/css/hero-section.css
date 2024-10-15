@@ -141,6 +141,20 @@ h1 {
   color: var(--accent-green);
 }
 
+.hero-btn .rectangle-dt {
+  background-color: #14c57c;
+}
+
+@media (hover: hover) {
+  .hero-button:hover .rectangle-dt {
+    background-color: #009156;
+  }
+}
+
+.hero-button:active .hero-btn .rectangle-dt {
+  background-color: #009156;
+}
+
 @media screen and (min-width: 320px) and (max-width: 360px) {
   .hero-button {
     min-width: 270px;

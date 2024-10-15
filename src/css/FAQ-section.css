@@ -1,13 +1,20 @@
-.faq-title {
-  text-transform: uppercase;
-}
-
-#ac.is-active {
+#ac.is-active,
+#ac-1.is-active,
+#ac-2.is-active,
+#ac-3.is-active,
+#ac-4.is-active,
+#ac-5.is-active {
   background: var(--light-accent);
   border-radius: 16px;
 }
 
-#ac {
+#ac,
+#ac-1,
+#ac-2,
+#ac-3,
+#ac-4,
+#ac-5 {
+  border: 0;
   border-bottom: 1px solid var(--light-grey);
   margin: 0;
   background-color: inherit;
@@ -32,7 +39,12 @@
   margin: 40px auto 0;
 }
 
-#ac-trigger {
+#ac-trigger,
+#ac-trigger-1,
+#ac-trigger-2,
+#ac-trigger-3,
+#ac-trigger-4,
+#ac-trigger-5 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -44,11 +56,21 @@
   width: 100%;
 }
 
-#ac-trigger::after {
+#ac-trigger::after,
+#ac-trigger-1::after,
+#ac-trigger-2::after,
+#ac-trigger-3::after,
+#ac-trigger-4::after,
+#ac-trigger-5::after {
   content: '';
 }
 
-#btn-text-wrap {
+#btn-text-wrap,
+#btn-text-wrap-1,
+#btn-text-wrap-2,
+#btn-text-wrap-3,
+#btn-text-wrap-4,
+#btn-text-wrap-5 {
   display: inline-block;
   width: 85%;
 }
@@ -63,19 +85,24 @@
   height: 24px;
   transition: transform 0.3s ease;
   transform-origin: center;
+  fill: var(--black);
 }
 
-#ac.is-active .faq-svg {
+#ac.is-active .faq-svg,
+#ac-1.is-active .faq-svg,
+#ac-2.is-active .faq-svg,
+#ac-3.is-active .faq-svg,
+#ac-4.is-active .faq-svg,
+#ac-5.is-active .faq-svg {
   transform: rotate(180deg);
 }
 
-/* .faq-svg use {
-  x: 50%;
-  y: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-#ac-text {
+#ac-text,
+#ac-text-1,
+#ac-text-2,
+#ac-text-3,
+#ac-text-4,
+#ac-text-5 {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 16px;
@@ -93,23 +120,32 @@
     max-width: 592px;
   }
 
-  #ac {
+  #ac,
+  #ac-1,
+  #ac-2,
+  #ac-3,
+  #ac-4,
+  #ac-5 {
     max-width: none;
     width: 704px;
   }
 
-  .faq-title {
-    font-size: 108px;
-    line-height: 115%;
-    letter-spacing: 0.02em;
-  }
-
-  #ac-trigger {
+  #ac-trigger,
+  #ac-trigger-1,
+  #ac-trigger-2,
+  #ac-trigger-3,
+  #ac-trigger-4,
+  #ac-trigger-5 {
     font-size: 20px;
     line-height: 160%;
   }
 
-  #btn-text-wrap {
+  #btn-text-wrap,
+  #btn-text-wrap-1,
+  #btn-text-wrap-2,
+  #btn-text-wrap-3,
+  #btn-text-wrap-4,
+  #btn-text-wrap-5 {
     width: 600px;
     max-width: none;
   }
@@ -136,11 +172,21 @@
     margin: 0;
   }
 
-  #ac {
+  #ac,
+  #ac-1,
+  #ac-2,
+  #ac-3,
+  #ac-4,
+  #ac-5 {
     width: 592px;
   }
 
-  #btn-text-wrap {
+  #btn-text-wrap,
+  #btn-text-wrap-1,
+  #btn-text-wrap-2,
+  #btn-text-wrap-3,
+  #btn-text-wrap-4,
+  #btn-text-wrap-5 {
     width: 488px;
   }
 
@@ -156,4 +202,13 @@
   .faq.section {
     height: 1184px;
   }
+}
+
+#ac.ac-dt,
+#ac-1.ac-dt,
+#ac-2.ac-dt,
+#ac-3.ac-dt,
+#ac-4.ac-dt,
+#ac-5.ac-dt {
+  border-bottom: 1px solid white;
 }
