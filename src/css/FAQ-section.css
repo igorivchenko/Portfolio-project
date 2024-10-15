@@ -55,10 +55,8 @@
 
 .faq-svg {
   position: absolute;
-  top: 0;
-  left: 0;
   top: 32px;
-  right: 28px;
+  right: 32px;
   display: block;
   margin: auto;
   width: 24px;
