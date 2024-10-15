@@ -3,17 +3,16 @@
 }
 
 .hero-bg-color {
-  background-image: url(../img/hero_decor_mob1.png);
+  background-image: url(/img/hero-mob12.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
+  background-size: 350px 264px;
+  background-position: top 3% center;
 }
 
 .hero-bg-color2 {
-  background-image: url(../img/hero_decor_mob2.png);
+  background-image: url(/img/hero-mob-13.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
+  background-position: top 60% right 13%;
 }
 
 .hero-box-title {
@@ -28,7 +27,6 @@ h1 {
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
 }
 
 .hero-accent {
@@ -42,7 +40,9 @@ h1 {
 }
 
 .hero-img {
+  border-radius: 32px;
   display: none;
+  object-position: top;
 }
 
 .hero-text {
@@ -68,12 +68,17 @@ h1 {
   height: 92px;
   border-radius: 16px;
   background-color: var(--light-accent);
+  transition: 0.3s;
 }
 
 @media (hover: hover) {
   .hero-button:hover .rectangle {
     background-color: var(--accent-green);
   }
+}
+
+.hero-button:active .rectangle {
+  background-color: #14c57c;
 }
 
 .hero-btn {
@@ -91,10 +96,10 @@ h1 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
+  color: var(--black);
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
   position: absolute;
   left: 0;
   display: flex;
@@ -105,11 +110,10 @@ h1 {
 .hero-description {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
 }
 
 .hero-description .accent-description {
@@ -126,6 +130,11 @@ h1 {
   flex-direction: column;
   gap: 24px;
   text-align: center;
+  transition: 0.3s;
+}
+
+.social-list-item {
+  transition: 0.3s ease-in-out;
 }
 
 .social-list-item:hover {
@@ -162,11 +171,14 @@ h1 {
   }
 
   .hero-bg-color {
-    background-image: url(../img/hero_decor_tablet1.png);
+    background-image: url(/img/hero_decor_tablet1.png);
+    background-position: top 4% right 9%;
   }
 
   .hero-bg-color2 {
-    background-image: url(../img/hero_decor_tablet2.png);
+    background-image: url(/img/hero_decor_tablet2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 18% right 25%;
   }
 
   .hero-box-title {
@@ -183,6 +195,10 @@ h1 {
     font-size: 124px;
     line-height: 1.2;
     letter-spacing: 0.01em;
+  }
+
+  .hero-button-inner {
+    font-size: 20px;
   }
 
   .hero-button {
@@ -205,6 +221,7 @@ h1 {
 
   .hero-description {
     width: 100%;
+    font-size: 20px;
   }
 
   .social-list {
@@ -221,11 +238,14 @@ h1 {
 /* Desktop 1280px */
 @media screen and (min-width: 1280px) {
   .hero-bg-color {
-    background-image: url(../img/hero_decor1.png);
+    background-image: url(/img/hero_decor2.png);
+    background-position: top 3% right 14%;
   }
 
   .hero-bg-color2 {
-    background-image: url(../img/hero_decor2.png);
+    background-image: url(/img/hero_decor1.png);
+    background-repeat: no-repeat;
+    background-position: bottom -14% left 17%;
   }
 
   .hero-box-title {

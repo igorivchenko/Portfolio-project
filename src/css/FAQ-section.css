@@ -1,1 +1,159 @@
+.faq-title {
+  text-transform: uppercase;
+}
 
+#ac.is-active {
+  background: var(--light-accent);
+  border-radius: 16px;
+}
+
+#ac {
+  border-bottom: 1px solid var(--light-grey);
+  margin: 0;
+  background-color: inherit;
+}
+
+.faq-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  max-width: 320px;
+}
+
+.faq-title-accent {
+  color: var(--accent-green);
+}
+
+.accordion-container {
+  margin: 40px auto 0;
+}
+
+#ac-trigger {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 28px 24px;
+  width: 100%;
+}
+
+#ac-trigger::after {
+  content: '';
+}
+
+#btn-text-wrap {
+  display: inline-block;
+  width: 85%;
+}
+
+.faq-svg {
+  position: absolute;
+  top: 32px;
+  right: 28px;
+  display: block;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+#ac.is-active .faq-svg {
+  transform: rotate(180deg);
+}
+
+.faq-svg use {
+  x: 50%;
+  y: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ac-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  padding: 0 24px 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-title {
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    max-width: 592px;
+  }
+
+  #ac {
+    max-width: none;
+    width: 704px;
+  }
+
+  .faq-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+
+  #ac-trigger {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  #btn-text-wrap {
+    width: 600px;
+    max-width: none;
+  }
+
+  .accordion-container {
+    max-width: 688px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section.faq.container {
+    position: relative;
+  }
+
+  .faq-title {
+    max-width: 520px;
+  }
+
+  .accordion-container {
+    position: absolute;
+    top: 440px;
+    right: 32px;
+    height: 544px;
+    margin: 0;
+  }
+
+  #ac {
+    width: 592px;
+  }
+
+  #btn-text-wrap {
+    width: 488px;
+  }
+
+  .bgr-img {
+    position: absolute;
+    background-image: url(../img/faq_decor.png);
+    width: 526px;
+    height: 408px;
+    top: 776px;
+    left: 32px;
+  }
+
+  .faq.section {
+    height: 1184px;
+  }
+}

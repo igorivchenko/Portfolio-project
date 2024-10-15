@@ -1,0 +1,100 @@
+.mob-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  overflow: auto;
+  background-image: url('../img/hero_decor_mob1.png'),
+    url('../img/hero_decor_mob2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 80px, right 563px;
+  background-size: 352px 265px;
+  transform: translateX(100%);
+  transition: 0.4s ease-in-out;
+}
+
+.mob-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mob-menu.is-active {
+  transform: translateX(0);
+  transition: 0.4s ease-in-out;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.mob-logo {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mob-accent {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+}
+
+.mob-btn-close {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mob-close-svg {
+  fill: var(--black);
+}
+
+.mob-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-nav-link-tag:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-nav-link-tag .mob-nav-tag:hover {
+  color: var(--accent-green);
+}
+
+.mob-nav-tag {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
