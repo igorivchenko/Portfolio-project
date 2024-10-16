@@ -167,7 +167,7 @@
   .faq-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 1020px;
+    height: 1056px;
   }
 
   .faq-title {
@@ -176,6 +176,9 @@
   }
 
   .accordion-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
     align-self: flex-end;
   }
 
@@ -202,15 +205,6 @@
     background-repeat: no-repeat;
     background-position: bottom left;
   }
-}
-
-#ac.ac-dt,
-#ac-1.ac-dt,
-#ac-2.ac-dt,
-#ac-3.ac-dt,
-#ac-4.ac-dt,
-#ac-5.ac-dt {
-  border-bottom: 1px solid white;
 }
 
 #ac.ac-dt,
