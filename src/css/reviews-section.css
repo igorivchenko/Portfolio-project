@@ -1,6 +1,6 @@
 /* reviews styles */
 
-.reviews-section {
+.reviews-container {
   max-width: 320px;
   margin: 0 auto;
 }
@@ -80,7 +80,8 @@
   height: 40px;
   padding: 6px;
   border-radius: 8px;
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--black);
+  background-color: var(--white);
 }
 
 .swiper-button-prev:hover,
@@ -90,6 +91,11 @@
   border: 1px solid var(--black);
   background: var(--light-grey);
   transition: 0.3s;
+}
+
+.swiper-button-prev use,
+.swiper-button-next use {
+  fill: var(--black);
 }
 
 .swiper-button-disabled {
@@ -112,7 +118,7 @@
 /* reviews tablet 768 px */
 
 @media screen and (min-width: 768px) {
-  .reviews-section {
+  .reviews-container {
     max-width: 704px;
   }
 
@@ -143,7 +149,7 @@
 /* reviews desktop 1280 px */
 
 @media screen and (min-width: 1280px) {
-  .reviews-section {
+  .reviews-container {
     max-width: 1216px;
   }
 
