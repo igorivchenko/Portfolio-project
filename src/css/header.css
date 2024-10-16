@@ -1,7 +1,10 @@
+.page-header {
+  padding-block: 20px;
+}
+
 .header-box {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
   flex-direction: row;
 }
 
@@ -36,8 +39,8 @@
 
 .circle {
   position: absolute;
-  top: 15%;
-  left: 11%;
+  top: 16%;
+  left: 10%;
   display: block;
   width: 15px;
   height: 15px;
@@ -47,13 +50,12 @@
 }
 
 .right .circle {
-  left: 49%;
-  top: 2px;
+  left: 47%;
+  top: 16%;
 }
 
 .nav {
   display: flex;
-  align-items: center;
   column-gap: 14px;
 }
 
@@ -78,6 +80,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .page-header {
+    padding-block: 32px;
+  }
+
   .header-box {
     display: block;
   }
@@ -107,8 +113,20 @@
   }
 
   .circle {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    display: block;
     width: 20px;
     height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent-green);
+    transition: 0.3s ease-in-out;
+  }
+
+  .right .circle {
+    left: 47%;
+    top: 8%;
   }
 
   .nav-list {

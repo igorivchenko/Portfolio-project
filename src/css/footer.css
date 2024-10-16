@@ -83,10 +83,6 @@ footer {
 }
 
 @media screen and (min-width: 767.99px) {
-  footer {
-    margin-top: 124px;
-  }
-
   .footer-all {
     width: 768px;
   }
@@ -109,10 +105,6 @@ footer {
 }
 
 @media screen and (min-width: 1279.99px) {
-  footer {
-    margin-top: 164px;
-  }
-
   .footer-all {
     width: 1280px;
   }
