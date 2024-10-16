@@ -1,6 +1,6 @@
 /* reviews styles */
 
-.reviews-section {
+.reviews-container {
   max-width: 320px;
   margin: 0 auto;
 }
@@ -118,7 +118,7 @@
 /* reviews tablet 768 px */
 
 @media screen and (min-width: 768px) {
-  .reviews-section {
+  .reviews-container {
     max-width: 704px;
   }
 
@@ -149,7 +149,7 @@
 /* reviews desktop 1280 px */
 
 @media screen and (min-width: 1280px) {
-  .reviews-section {
+  .reviews-container {
     max-width: 1216px;
   }
 
