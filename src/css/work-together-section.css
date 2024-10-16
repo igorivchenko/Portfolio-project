@@ -182,9 +182,9 @@
 .work-together-form-textarea:focus,
 .work-together-form-input:hover,
 .work-together-form-textarea:hover {
-  border-color: #007bff;
-  border: 2px solid #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: var(--accent-green);
+  border: 2px solid var(--accent-green);
+  box-shadow: 0 0 5px rgba(20, 116, 65, 0.5);
   outline: none;
 }
 .work-together-submit-button {
@@ -299,9 +299,6 @@
     font-size: 52px;
     line-height: 64px;
     margin-bottom: 40px;
-  }
-  .work-together-row-container {
-    width: 320px;
   }
   .work-together-adress-title {
     margin-bottom: 40px;

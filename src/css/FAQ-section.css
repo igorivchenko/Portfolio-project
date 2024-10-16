@@ -1,3 +1,7 @@
+.faq {
+  position: relative;
+}
+
 .faq-title {
   text-transform: uppercase;
 }
@@ -8,6 +12,7 @@
 }
 
 #ac {
+  border: none;
   border-bottom: 1px solid var(--light-grey);
   margin: 0;
   background-color: inherit;
@@ -115,20 +120,19 @@
 }
 
 @media screen and (min-width: 1280px) {
-  section.faq.container {
-    position: relative;
+  .faq-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 1020px;
   }
 
   .faq-title {
+    align-self: flex-start;
     max-width: 520px;
   }
 
   .accordion-container {
-    position: absolute;
-    top: 440px;
-    right: 32px;
-    height: 544px;
-    margin: 0;
+    align-self: flex-end;
   }
 
   #ac {
@@ -140,15 +144,8 @@
   }
 
   .bgr-img {
-    position: absolute;
-    background-image: url(../img/faq_decor.png);
-    width: 526px;
-    height: 408px;
-    top: 776px;
-    left: 32px;
-  }
-
-  .faq.section {
-    height: 1184px;
+    background-image: url(/img/faq_decor.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
   }
 }

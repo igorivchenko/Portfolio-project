@@ -123,7 +123,7 @@ const renderProjects = arr => {
                 <div class="projects-box">
                     <span class="projects-name">${name}</span>
                     <span class="projects-visit">
-                        <a class="projects-link" href="#">
+                        <a class="projects-link" href="https://github.com/igorivchenko/Portfolio-project" target="_blank">
                             visit
                             <svg class="projects-icon">
                                 <use href="${svg}#icon-projects-icon"></use>
