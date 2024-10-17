@@ -4,6 +4,7 @@
 
 .header-box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-direction: row;
 }
@@ -56,6 +57,7 @@
 
 .nav {
   display: flex;
+  align-items: center;
   column-gap: 14px;
 }
 
