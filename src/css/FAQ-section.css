@@ -14,6 +14,7 @@
 #ac-5.is-active {
   background: var(--light-accent);
   border-radius: 16px;
+  border-bottom: none !important;
 }
 
 #ac,
