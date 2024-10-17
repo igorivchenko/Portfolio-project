@@ -44,6 +44,9 @@
 }
 
 .accordion-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
   margin: 40px auto 0;
 }
 
@@ -159,6 +162,7 @@
   }
 
   .accordion-container {
+    row-gap: 8px;
     max-width: 688px;
   }
 }
@@ -176,9 +180,6 @@
   }
 
   .accordion-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
     align-self: flex-end;
   }
 
