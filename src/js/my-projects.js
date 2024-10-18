@@ -151,6 +151,7 @@ const createGallery = (page, click) => {
 
     if (unVisibleCount <= page) {
       hideLoadMore();
+      projectsList.classList.add('hide-margin');
     }
   }
 };

@@ -109,6 +109,10 @@
   top: 28px;
 }
 
+.hide-margin {
+  margin-bottom: 0;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
   .projects-head {
@@ -148,6 +152,10 @@
   .projects-more-text {
     font-size: 20px;
   }
+
+  .hide-margin {
+    margin-bottom: 0;
+  }
 }
 
 /* DESKTOP */
@@ -172,5 +180,9 @@
   .projects-list {
     gap: 80px;
     margin-bottom: 80px;
+  }
+
+  .hide-margin {
+    margin-bottom: 0;
   }
 }

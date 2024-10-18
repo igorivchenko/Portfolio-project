@@ -82,6 +82,7 @@
   border-radius: 8px;
   border: 1px solid var(--black);
   background-color: var(--white);
+  fill: var(--black);
 }
 
 .swiper-button-prev:hover,
@@ -93,12 +94,7 @@
   transition: 0.3s;
 }
 
-.swiper-button-prev use,
-.swiper-button-next use {
-  fill: var(--black);
-}
-
-.swiper-button-disabled {
+.button-wrapper .swiper-button-disabled {
   border: 1px solid var(--light-grey);
   pointer-events: none;
   fill: var(--light-grey);

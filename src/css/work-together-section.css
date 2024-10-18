@@ -212,23 +212,24 @@
 /* ___________________________END GENERIC________________________ */
 /* ___________________________MODAL______________________________ */
 .work-together-modal-backdrop {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   z-index: 1000;
   flex-shrink: 0;
   background-color: rgba(0, 0, 0, 0.8);
   margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
 }
 .work-together-modal-backdrop.active {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 .work-together-modal-window {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -236,6 +237,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 16px;
   background-color: var(--white);
   gap: 16px;
@@ -464,6 +467,7 @@
     margin-left: 0px;
     font-size: 108px;
     line-height: 124px;
+    user-select: none;
   }
   .work-together-img {
     position: fixed;
