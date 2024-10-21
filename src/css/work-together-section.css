@@ -1,4 +1,4 @@
-/* version 1.3 */
+/* version 1.4 */
 /* ________________________SECTION WORK-TOGETHER_______________________ */
 /* _____________________________GENERIC___________________________ */
 ::placeholder {
@@ -7,10 +7,10 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 150%; 
+    line-height: 150%;
     letter-spacing: 0.03em;
-}
-.work-together-title {
+  }
+  .work-together-title {
     color: var(--accent-green);
     font-family: var(--second-family);
     font-weight: 400;
@@ -19,24 +19,24 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: left;
-}
-.black-text {
-    color: var(--black); 
-}
-.work-together-row-container {
+  }
+  .black-text {
+    color: var(--black);
+  }
+  .work-together-row-container {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     margin: auto;
-}
-.work-together-adress-title{  
-    margin-bottom: 0px; 
+  }
+  .work-together-adress-title {
+    margin-bottom: 0px;
     gap: 0px;
-}
-.work-together-form-title {
+  }
+  .work-together-form-title {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -46,26 +46,26 @@
     color: var(--black);
     align-self: stretch;
     text-align: left;
-}
-.work-together-address{
+  }
+  .work-together-address {
     width: 100%;
-}
-.work-together-address-list {
+  }
+  .work-together-address-list {
     list-style: none;
     padding: 0;
     display: flex;
     width: 100%;
     gap: 16px;
-}
-.work-together-address-itemlist{
+  }
+  .work-together-address-itemlist {
     height: 24px;
     display: flex;
     align-items: center;
     text-align: left;
     position: relative;
     margin: 0;
-}
-.work-together-address-link {
+  }
+  .work-together-address-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -77,20 +77,20 @@
     letter-spacing: 0.03em;
     color: var(--black);
     transition: 0.3s ease;
-}
-.work-together-address-link:hover,
-.work-together-address-link:focus {
+  }
+  .work-together-address-link:hover,
+  .work-together-address-link:focus {
     color: var(--accent-green);
-}
-.work-together-address-icon {
+  }
+  .work-together-address-icon {
     margin-right: 16px;
     position: relative;
     left: 0;
     top: 0;
     transition: 0.3s ease;
-}
-.work-together-address-icon:hover,
-.work-together-address-icon:focus {
+  }
+  .work-together-address-icon:hover,
+  .work-together-address-icon:focus {
     border-radius: 8px;
     background-color: var(--light-accent);
     display: flex;
@@ -99,31 +99,31 @@
     padding: 12px;
     justify-content: center;
     align-items: center;
-}
-.work-together-form {
+  }
+  .work-together-form {
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
-.work-together-form-email {
+  }
+  .work-together-form-email {
     width: 100%;
     height: 48px;
-}
-.work-together-form-label {
+  }
+  .work-together-form-label {
     width: 100%;
-}
-.work-together-textarea-message{
+  }
+  .work-together-textarea-message {
     width: 100%;
     height: 128px;
-}
-.work-together-input-email,
-.work-together-textarea-message {
+  }
+  .work-together-input-email,
+  .work-together-textarea-message {
     position: relative;
-}
-.work-together-input-email {
+  }
+  .work-together-input-email {
     position: relative;
-}
-.work-together-form-input {
+  }
+  .work-together-form-input {
     width: 100%;
     padding: 16px 16px;
     border-radius: 8px;
@@ -136,22 +136,22 @@
     color: var(--black);
     border-color: transparent;
     transition: 0.3s ease;
-}
-.work-together-form-input-valid {
+  }
+  .work-together-form-input-valid {
     position: absolute;
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
     display: none;
-}
-.work-together-form-input.valid + .work-together-form-textarea-valid {
+  }
+  .work-together-form-input.valid + .work-together-form-textarea-valid {
     display: inline;
-}
-.work-together-form-input.error,
-.work-together-form-textarea.error {
+  }
+  .work-together-form-input.error,
+  .work-together-form-textarea.error {
     color: var(--error);
-}
-.error-message {
+  }
+  .error-message {
     position: absolute;
     bottom: -18px;
     left: 0;
@@ -162,8 +162,8 @@
     font-size: 12px;
     line-height: 133%;
     letter-spacing: 0.04em;
-}
-.work-together-form-textarea {
+  }
+  .work-together-form-textarea {
     width: 100%;
     padding: 16px 16px;
     border-radius: 8px;
@@ -177,77 +177,77 @@
     border-color: transparent;
     resize: none;
     transition: 0.3s ease;
-}
-.work-together-form-input:focus,
-.work-together-form-textarea:focus,
-.work-together-form-input:hover,
-.work-together-form-textarea:hover {
-    border-color: #007BFF;
-    border: 2px solid #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  .work-together-form-input:focus,
+  .work-together-form-textarea:focus,
+  .work-together-form-input:hover,
+  .work-together-form-textarea:hover {
+    border-color: var(--accent-green);
+    border: 2px solid var(--accent-green);
+    box-shadow: 0 0 5px rgba(20, 116, 65, 0.5);
     outline: none;
-}
-.work-together-submit-button {
+  }
+  .work-together-submit-button {
     width: 173px;
     height: 48px;
     text-align: left;
     padding: 12px 24px;
     border-radius: 8px;
     background-color: var(--accent-green);
-    text-align: center;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--white);
+    color: white;
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
-}
-.work-together-submit-button:hover,
-.work-together-submit-button:focus {
+  }
+  .work-together-submit-button:hover,
+  .work-together-submit-button:focus {
     background: var(--hover-green);
-}
-/* ___________________________END GENERIC________________________ */
-/* ___________________________MODAL______________________________ */
-.work-together-modal-backdrop {
-    display: none;
-    /* display: flex; */
+  }
+  /* ___________________________END GENERIC________________________ */
+  /* ___________________________MODAL______________________________ */
+  .work-together-modal-backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    top: 0;
-    left: 0;  
-    right: 0;
-    bottom: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    align-items: center;
     z-index: 1000;
     flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    margin: auto; 
-}
-.work-together-modal-backdrop.active {
-    display: flex;
-}
-.work-together-modal-window {
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .work-together-modal-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .work-together-modal-window {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 16px;
     background-color: var(--white);
     gap: 16px;
-    transition: 0.3s ease;
-}
-.work-together-modal-window.error {
-    background-color: var(--error); 
-    color: var(--error); 
-}
-.work-together-modal-close-btn { 
+  }
+  .work-together-modal-window.error {
+    background-color: var(--error);
+    color: var(--error);
+  }
+  .work-together-modal-close-btn {
     background: none;
     border: none;
     font-size: 24px;
@@ -255,14 +255,14 @@
     cursor: pointer;
     right: 16px;
     top: 16px;
-}
-.work-together-modal-close-btn:hover {
-    opacity: 0.8; 
-}
-.work-together-form-modal-close {
+  }
+  .work-together-modal-close-btn:hover {
+    opacity: 0.8;
+  }
+  .work-together-form-modal-close {
     fill: var(--black);
-}
-.work-together-modal-backdrop .work-together-modal-title {
+  }
+  .work-together-modal-backdrop .work-together-modal-title {
     text-align: center;
     color: var(--accent-green);
     font-family: var(--font-family);
@@ -275,8 +275,8 @@
     text-transform: uppercase;
     align-self: stretch;
     width: 100%;
-}
-.work-together-modal-message {
+  }
+  .work-together-modal-message {
     align-self: stretch;
     color: var(--black);
     text-align: center;
@@ -286,252 +286,247 @@
     line-height: 150%;
     letter-spacing: 0.03em;
     text-align: center;
-}
-/* ___________________________END MODAL__________________________ */
-/* __________________________BASE-MOBILE_________________________ */
-@media (min-width: 320px) and (max-width: 359px) {
+  }
+  /* ___________________________END MODAL__________________________ */
+  /* __________________________BASE-MOBILE_________________________ */
+  @media (min-width: 320px) and (max-width: 359px) {
     .work-together {
-        flex-direction: column; 
-        padding-top: 80px;
-        /* padding-bottom: 80px; */
-        margin: auto;
+      flex-direction: column;
+      padding-block: 80px;
+      margin: auto;
     }
     .work-together-title {
-        width: 100%;
-        font-size: 52px;
-        line-height: 64px;
-        margin-bottom: 40px;
-    }
-    .work-together-row-container {
-        width: 320px;
-    }
-    .work-together-adress-title{  
-        margin-bottom: 40px;  
-    }
-    .work-together-form-title {
-        width: 280px;
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 32px;
-    }
-    .work-together-address-list {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .work-together-form {
-        width: 280px;
-    }
-    .work-together-submit-button {
-        width: 280px;
-    }
-    .work-together-modal-backdrop {
-        width: 100%;
-        padding: 214px 20px;
-    }
-    .work-together-modal-window {
-        width: 100%;
-        padding: 48px 32px;
-    }
-}
-@media (min-width: 360px) and (max-width: 767px) {
-    .work-together {
-        flex-direction: column; 
-        padding-top: 80px;
-        /* padding-bottom: 80px; */
-        margin: auto;
-    }
-    .work-together-title {
-        width: 100%;
-        font-size: 52px;
-        line-height: 64px;
-        margin-bottom: 40px;
-    }
-    .work-together-row-container {
-        width: 100%;
-    }
-    .work-together-adress-title{  
-        margin-bottom: 40px;  
-    }
-    .work-together-form-title {
-        width: 100%;
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 32px;
-    }
-    .work-together-address-list {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .work-together-form {
-        width: 100%;
-    }
-    .work-together-submit-button {
-        width: 320px;
-    }
-    .work-together-modal-backdrop {
-        width: 100%;
-        padding: 214px 20px;
-    }
-    .work-together-modal-window {
-        width: 100%;
-        padding: 48px 32px;
-    }
-}
-/* ____________________________END BASE-MOBILE___________________________ */
-/* ________________________________TABLET_______________________________ */
-@media (min-width: 768px) and (max-width: 1279px) {  
-    .work-together {
-        flex-direction: column; 
-        padding-top: 124px;
-        /* padding-bottom: 124px; */
-        margin: auto;
-        background-image: url(..//img/lets_tablet_decor.png);
-        background-repeat: no-repeat;
-        background-size: 336px 260px;
-        background-position: top 1% right 6%;
-    }
-    .work-together-title {
-        width: 100%;
-        font-size: 108px;
-        line-height: 124px;
-        margin-bottom: 60px;
-    }
-    .work-together-img{
-        position: fixed;
-        width: 336px;
-        height: 260px;
-        top: -118px; 
-        right: 32px;
-        z-index: 1000;
-    }
-    .work-together-row-container {
-        width: 100%;
-        gap: 60px;
-    }
-    .work-together-adress-title{  
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .work-together-form-title {
-        width: 100%;
-        font-size: 20px;
-        line-height: 32px;
-    }
-    .work-together-address-list {
-        display: flex;
-        flex-direction: row;
-    }
-    .work-together-form {
-        width: 100%;
-    }
-    .work-together-submit-button {
-        width: 173px;
-    }
-    .work-together-modal-backdrop {
-        width: 100%;
-        padding: 280px 138px;
-    }
-    .work-together-modal-window {
-        width: 492px;
-        padding: 64px 64px;
-    }
-}
-/* ______________________________END TABLET____________________________ */
-/* ______________________________DESKTOP______________________________ */
-@media screen and (min-width: 1280px) {
-    .work-together {
-        padding-top: 164px;
-        /* padding-bottom: 164px; */
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        width: 100%; 
-        margin: auto;
-        background-image: url(..//img/lets_decor.png);
-        background-repeat: no-repeat;
-        background-size: 526px 408px;
-        background-position: top 7% right 7%;
-    }
-    .work-together-row-div {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: flex-start; 
-        justify-content: left;
-        width: 100%;
-        margin-bottom: 80px;
-    }
-    .work-together-title {
-        width: 48%;
-        margin-left: 0px;
-        font-size: 108px;
-        line-height: 124px;
-    }
-    .work-together-img{
-        position: fixed;
-        width: 526px;
-        height: 408px;
-        top: -118px; 
-        right: 32px;
-        z-index: 1000;
-    }
-    .work-together-row-container {
-        display: inline-flex;
-        flex-direction: row;
-        gap: 136px;
-        align-items: flex-end; 
-        justify-content: center;
-        width: 100%;
-        margin: auto;
-        height: 288px;
-    }
-    .work-together-form-title {
-        width: 100%;
-        font-size: 20px;
-        line-height: 32px;
-        padding-bottom: 0;
+      width: 100%;
+      font-size: 52px;
+      line-height: 64px;
+      margin-bottom: 40px;
     }
     .work-together-adress-title {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 120px;
-        margin: 0px;
-        padding: 0px;
+      margin-bottom: 40px;
+    }
+    .work-together-form-title {
+      width: 280px;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 32px;
     }
     .work-together-address-list {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: flex-start;
-        padding-left: 0; 
+      flex-direction: column;
+      gap: 16px;
     }
     .work-together-form {
-        display: flex;
-        flex-direction: column;
-        width: 48%;
-        margin: 0;
-        height: 100%;
+      width: 280px;
     }
     .work-together-submit-button {
-        width: 173px;
+      width: 280px;
     }
     .work-together-modal-backdrop {
-        width: 100%;
-        padding: 200px 394px;
+      width: 100%;
+      padding: 214px 20px;
     }
     .work-together-modal-window {
-        width: 492px;
-        padding: 64px 64px;
+      width: 100%;
+      padding: 48px 32px;
     }
-}
-/* ______________________________END DESKTOP______________________________ */
-/* _________________________END SECTION WORK-TOGETHER_______________________ */
+  }
+  
+  @media (min-width: 360px) and (max-width: 767px) {
+    .work-together {
+      padding-block: 80px;
+      flex-direction: column;
+      margin: auto;
+    }
+    .work-together-title {
+      width: 100%;
+      font-size: 52px;
+      line-height: 64px;
+      margin-bottom: 40px;
+    }
+    .work-together-row-container {
+      width: 100%;
+    }
+    .work-together-adress-title {
+      margin-bottom: 40px;
+    }
+    .work-together-form-title {
+      width: 100%;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
+    .work-together-address-list {
+      flex-direction: column;
+      gap: 16px;
+    }
+    .work-together-form {
+      width: 100%;
+    }
+    .work-together-submit-button {
+      width: 320px;
+    }
+    .work-together-modal-backdrop {
+      width: 100%;
+      padding: 214px 20px;
+    }
+    .work-together-modal-window {
+      width: 100%;
+      padding: 48px 32px;
+    }
+  }
+  /* ____________________________END BASE-MOBILE___________________________ */
+  /* ________________________________TABLET_______________________________ */
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .work-together {
+      flex-direction: column;
+      padding-block: 124px;
+      margin: auto;
+      background-image: url(/img/lets_tablet_decor.png);
+      background-repeat: no-repeat;
+      background-size: 336px 260px;
+      background-position: top 1% right 6%;
+    }
+    .work-together-title {
+      width: 100%;
+      font-size: 108px;
+      line-height: 124px;
+      margin-bottom: 60px;
+    }
+    .work-together-img {
+      position: fixed;
+      width: 336px;
+      height: 260px;
+      top: -118px;
+      right: 32px;
+      z-index: 1000;
+    }
+    .work-together-row-container {
+      width: 100%;
+      gap: 60px;
+    }
+    .work-together-adress-title {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      margin: 0px;
+      padding: 0px;
+    }
+    .work-together-form-title {
+      width: 100%;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .work-together-address-list {
+      display: flex;
+      flex-direction: row;
+    }
+    .work-together-form {
+      width: 100%;
+    }
+    .work-together-submit-button {
+      width: 173px;
+    }
+    .work-together-modal-backdrop {
+      width: 100%;
+      padding: 280px 138px;
+    }
+    .work-together-modal-window {
+      width: 492px;
+      padding: 64px 64px;
+    }
+  }
+  /* ______________________________END TABLET____________________________ */
+  /* ______________________________DESKTOP______________________________ */
+  @media screen and (min-width: 1280px) {
+    .work-together {
+      padding-block: 164px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+      background-image: url(/img/lets_decor.png);
+      background-repeat: no-repeat;
+      background-size: 526px 408px;
+      background-position: top 7% right 7%;
+    }
+    .work-together-row-div {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: left;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+    .work-together-title {
+      width: 48%;
+      margin-left: 0px;
+      font-size: 108px;
+      line-height: 124px;
+      user-select: none;
+    }
+    .work-together-img {
+      position: fixed;
+      width: 526px;
+      height: 408px;
+      top: -118px;
+      right: 32px;
+      z-index: 1000;
+    }
+    .work-together-row-container {
+      display: inline-flex;
+      flex-direction: row;
+      gap: 136px;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+      height: 288px;
+    }
+    .work-together-form-title {
+      width: 100%;
+      font-size: 20px;
+      line-height: 32px;
+      padding-bottom: 0;
+    }
+    .work-together-adress-title {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 120px;
+      margin: 0px;
+      padding: 0px;
+    }
+    .work-together-address-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+      padding-left: 0;
+    }
+    .work-together-form {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      margin: 0;
+      height: 100%;
+    }
+    .work-together-submit-button {
+      width: 173px;
+    }
+    .work-together-modal-backdrop {
+      width: 100%;
+      padding: 200px 394px;
+    }
+    .work-together-modal-window {
+      width: 492px;
+      padding: 64px 64px;
+    }
+  }
+  /* ______________________________END DESKTOP______________________________ */
+  /* _________________________END SECTION WORK-TOGETHER_______________________ */
