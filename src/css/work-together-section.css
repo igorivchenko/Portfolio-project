@@ -1,4 +1,4 @@
-/* version 1.4 */
+/* version 1.5 */
 /* ________________________SECTION WORK-TOGETHER_______________________ */
 /* _____________________________GENERIC___________________________ */
 ::placeholder {
@@ -242,6 +242,9 @@
     border-radius: 16px;
     background-color: var(--white);
     gap: 16px;
+  }
+  .no-scroll {
+    overflow: hidden;
   }
   .work-together-modal-window.error {
     background-color: var(--error);

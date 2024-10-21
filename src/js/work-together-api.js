@@ -1,4 +1,4 @@
-//version 1.4
+//version 1.5
 
 // Цей код перехоплює операцію для відправки API (POST) запиту на сервер з електронною поштою та повідомленням
 // Тут виконуються всі перевірки щодо полів електронної пошти та повідомлення
@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
       modalTitle.textContent = title;
       modalMessage.textContent = message;
       modalBackdrop.classList.add('active');
+      document.body.classList.add('no-scroll'); // Додати клас для блокування прокрутки
     }
   
     // Функція для закриття модального вікна
     function closeModal() {
       modalBackdrop.classList.remove('active');
+      document.body.classList.remove('no-scroll'); // Видалити клас для дозволу прокрутки
     }
   
     // Валідація email
